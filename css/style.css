@@ -1,0 +1,55 @@
+#menu {
+	position: fixed;
+	z-index: 9;
+	width: 90%;
+	list-style: none;
+}
+
+#menu li {
+	text-align: center;
+}
+
+.buttonOff,
+.buttonOn {
+  font-size: 2em;
+  cursor: pointer;
+  top: 20px;
+}
+
+.buttonOff {
+	float: right;
+	top: 20px;
+	right: 20px;
+	position: relative;
+	z-index: 5;
+}
+.buttonOn {
+  left: 240px;
+}
+
+.hidden {
+	display: none;
+}
+
+.fix {
+	position: absolute;
+}
+
+.modalOn {
+	display: block;
+	height: 100%;
+	animation-duration: 3s;
+  	animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%; 
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
