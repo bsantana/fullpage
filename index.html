@@ -23,17 +23,119 @@
 		<script type="text/javascript" src="js/jquery.pagepiling.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/snap.svg-min.js"></script>
+		<!--<style type="text/css">
+			body,
+			html,
+			div {
+			  background: #292a38;
+			  margin: 0;
+			  padding: 0;
+			  width: 100%;
+			  height: 100%;
+			  text-align: center;
+			}
+			svg {
+			  width: 200px;
+			  height: 150px;
+			  cursor: pointer;
+			  -webkit-transform: translate3d(0, 0, 0);
+			  -moz-transform: translate3d(0, 0, 0);
+			  -o-transform: translate3d(0, 0, 0);
+			  -ms-transform: translate3d(0, 0, 0);
+			  transform: translate3d(0, 0, 0);
+			}
+			path {
+			  fill: none;
+			  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  stroke-width: 40px;
+			  stroke-linecap: round;
+			  stroke: #a06ba5;
+			  stroke-dashoffset: 0px;
+			}
+			path#top,
+			path#bottom {
+			  stroke-dasharray: 240px 950px;
+			}
+			path#middle {
+			  stroke-dasharray: 240px 240px;
+			}
+			.cross path#top,
+			.cross path#bottom {
+			  stroke-dashoffset: -650px;
+			  stroke-dashoffset: -650px;
+			}
+			.cross path#middle {
+			  stroke-dashoffset: -115px;
+			  stroke-dasharray: 1px 220px;
+			}
+		</style>
+		<script type="text/javascript">
+			(function() {
+				var i, resize;
+
+				i = setInterval(function() {
+				return $("div").toggleClass("cross");
+				}, 1500);
+
+				$("div").click(function() {
+				clearInterval(i);
+				return $("div").toggleClass("cross");
+				});
+
+				resize = function() {
+				return $("body").css({
+				  "margin-top": ~~((window.innerHeight - 150) / 2) + "px"
+				});
+				};
+
+				$(window).resize(resize);
+
+				resize();
+
+			}).call(this);
+		</script>-->
   </head>
   <body>
 
 	
-		
+		<!--<div>
+			<svg viewBox="0 0 800 600">
+				<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+				<path d="M300,320 L540,320" id="middle"></path>
+				<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+			</svg>
+		</div>-->
 		<ul id="menu">
-			<li data-menuanchor="page1"><a href="#page1">First slide</a></li>
-			<li data-menuanchor="page2"><a href="#page2">Second slide</a></li>
-			<li data-menuanchor="page3"><a href="#page3">Third slide</a></li>
-			<li data-menuanchor="page4"><a href="#page4">Fourth slide</a></li>
+			<div style="float: right;">MENU</div>
+			<div class="hidden">			
+				<li data-menuanchor="page1"><a href="#page1">First slide</a></li>
+				<li data-menuanchor="page2"><a href="#page2">Second slide</a></li>
+				<li data-menuanchor="page3"><a href="#page3">Third slide</a></li>
+				<li data-menuanchor="page4"><a href="#page4">Fourth slide</a></li>
+			</div>
 		</ul>
+
+		<div class="hidden cd-modal" data-modal="modal-trigger">
+	      	<div class="cd-svg-bg" 
+				data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+				data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+				data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+				data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+				data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+				data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+				<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+					<title>SVG Modal background</title>
+					<path fill="rgb(255, 255, 0)" id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+					<path fill="rgb(255, 255, 0)" id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+					<path fill="rgb(255, 255, 0)" id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+				</svg>
+			</div>
+			<button class="buttonOff modal-close">X</button>
+	    </div>
 
   	<div id="fullpage">
 	    <div class="section">
@@ -41,14 +143,20 @@
 			</div>
 
 	    <div class="section">
+	    	<div class="guide">O que somos</div>
 
-	    	Section Two
-	    	<div class="slide"> Slide 1 </div>
-				<div class="slide"> Slide 2 
-					<br><br><br><button id="buttonOn">Modal Open</button><div class="modal"><button id="buttonOff">Modal Off</button></div>
-				</div>
-				<div class="slide"> Slide 3 </div>
-				<div class="slide"> Slide 4 </div>
+	    	<div class="slide">
+	    		Slide 1
+	    	</div>
+			<div class="slide">
+				Slide 2 
+			</div>
+			<div class="slide">
+				Slide 3
+			</div>
+			<div class="slide">
+				Slide 4
+			</div>
 	    </div>
 
 	    <div class="section">
@@ -60,30 +168,15 @@
 	      	section 4
 	      	<button class="buttonOn" id="modal-trigger" data-type="cd-modal-trigger">Modal Open</button>
 	      </div>
-	      <div class="pagepiling hidden cd-modal" data-modal="modal-trigger">
+			<div class="pagepiling hidden cd-modal" data-modal="modal-trigger">
 
-	      	<div class="cd-svg-bg" 
-					data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
-					data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
-					data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
-					data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
-					data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
-					data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
-						<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
-							<title>SVG Modal background</title>
-							<path fill="rgb(255, 255, 0)" id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
-							<path fill="rgb(255, 255, 0)" id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
-							<path fill="rgb(255, 255, 0)" id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
-						</svg>
-					</div>
+				<div class="section2">Some section</div>
+				<div class="section2">Some section</div>
+				<div class="section2">Some section</div>
+				<div class="section2">Some section</div>
 
-					<div class="section2">Some section</div>
-					<div class="section2">Some section</div>
-					<div class="section2">Some section</div>
-					<div class="section2">Some section</div>
-
-					<button class="buttonOff modal-close">X</button>
-				</div>
+				<button class="buttonOff modal-close">X</button>
+			</div>
 	    </div>
 
 	    <div class="section">

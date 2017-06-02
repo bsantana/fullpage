@@ -3,8 +3,6 @@ $(document).ready(function() {
 	var slideIndex  = 1,
 		sliding     = false;
 	$('#fullpage').fullpage({
-
-	  sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 	  scrollHorizontally: true,
 	  navigation: true,
 	  showActiveTooltip: true
