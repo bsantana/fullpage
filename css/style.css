@@ -1,7 +1,52 @@
-/* Definição de cores das seções e sliders */
+@media (max-width: 767px) {
+  	.container-fluid .row div.col-sm-2 {
+		height: 400px;
+	}
+	.container .row div {
+		height: 400px;
+	}
+}
+@media (min-width: 768px) {
+  	.container-fluid .row div {
+		height: 130px;
+	}
+	.container .row div {
+		height: 130px;
+	}
+}
+@media (min-width: 992px) {
+  	.container-fluid .row div {
+	height: 170px;
+	}
+	.container .row div {
+		height: 170px;
+	}
+}
+@media (min-width: 1200px) {
+  	.container-fluid .row div {
+		height: 190px;
+	}
+	.container .row div {
+		height: 190px;
+	}
+}
+@media (min-width: 1600px) {
+  	.container-fluid .row div {
+		height: 270px;
+	}
+	.container .row div {
+		height: 270px;
+	}
+}
+
+
+/** Seção 1 **/
 #fullpage .section:nth-child(1) {
 	background: linear-gradient(to right, #7c2327, #cd3a40, #c72128);
 }
+
+/* Definição de cores das seções e sliders */
+/** Seção 2 - Slider **/
 #fullpage .section:nth-child(2) .slide:nth-child(1) {
 	background: linear-gradient(to right, #c72128, #cd3a40, #f05a24);
 }
@@ -16,6 +61,7 @@
 } /* End */
 
 /* Definindo cor de fundo de cada categoria do slider */
+/** Seção 3 - Slider **/
 #fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(2) {
 	background: #EDA64D;
 }
@@ -51,7 +97,7 @@
 }
 #fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(13) {
 	background: #C06096;
-} /* End */
+}
 
 
 #fullpage .section:nth-child(3) .slide:nth-child(1) .row div {
@@ -70,12 +116,14 @@
     -webkit-box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
     -moz-box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
     box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
+    border: none;
+    cursor: pointer;
 }
 
 #fullpage .section:nth-child(3) .slide:nth-child(1) .fp-tableCell {
 	display: block;
 	margin-top: 85px;
-}
+} /* End */
 
 #menu {
 	position: fixed;
