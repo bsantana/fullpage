@@ -11,6 +11,71 @@
 #fullpage .section:nth-child(2) .slide:nth-child(3) {
 	background: linear-gradient(to right, #f6921e, #f05a24, #c72128);
 }
+#fullpage .section:nth-child(3) .slide:nth-child(1) {
+	background: #e4dede;
+} /* End */
+
+/* Definindo cor de fundo de cada categoria do slider */
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(2) {
+	background: #EDA64D;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(3) {
+	background: #83AE5D;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(4) {
+	background: #7F6486;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(5) {
+	background: #8BB42B;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(6) {
+	background: #66A2C1;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(7) {
+	background: #CC362D;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(8) {
+	background: #FF5507;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(9) {
+	background: #956441;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(10) {
+	background: #E5742D;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(11) {
+	background: #33855F;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(12) {
+	background: #2C449D;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(13) {
+	background: #C06096;
+} /* End */
+
+
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row div {
+	border-right: 8px solid #e4dede;
+	border-bottom: 8px solid #e4dede;
+}
+#fullpage .section:nth-child(3) .slide:nth-child(1) .row div:not(:nth-child(1)):hover {
+	overflow: hidden;
+    background-color: #fff;
+    z-index: 999;
+    -moz-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    transition: all .7s cubic-bezier(.19,1,.22,1);
+    -webkit-box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
+    -moz-box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
+    box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
+}
+
+#fullpage .section:nth-child(3) .slide:nth-child(1) .fp-tableCell {
+	display: block;
+	margin-top: 85px;
+}
 
 #menu {
 	position: fixed;
@@ -25,7 +90,8 @@
     background: rgba(255,255,255,.5);
     border-radius: 4px;
     position: absolute;
-    right: 100px;
+    right: 0;
+    margin-right: 9%;
     margin-top: 30px;
     z-index: 2;
 }
