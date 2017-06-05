@@ -98,6 +98,12 @@
 #fullpage .section:nth-child(3) .slide:nth-child(1) .row :nth-child(13) {
 	background: #C06096;
 }
+#fullpage .section:nth-child(3) .slide:nth-child(2) {
+	background: linear-gradient(to bottom, #c77c2c, #eda64d, #f2c081);
+}
+#fullpage .section:nth-child(3) .slide:nth-child(3) {
+	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
+}
 
 
 #fullpage .section:nth-child(3) .slide:nth-child(1) .row div {
@@ -119,10 +125,17 @@
     border: none;
     cursor: pointer;
 }
-
 #fullpage .section:nth-child(3) .slide:nth-child(1) .fp-tableCell {
 	display: block;
 	margin-top: 85px;
+} /* End */
+
+/** Seção 4 - Slider **/
+#fullpage .section:nth-child(4) .slide:nth-child(1) {
+	background: linear-gradient(to bottom, #c77c2c, #eda64d, #f2c081);
+}
+#fullpage .section:nth-child(4) .slide:nth-child(2) {
+	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
 } /* End */
 
 #menu {
