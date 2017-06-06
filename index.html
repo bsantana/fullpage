@@ -11,6 +11,7 @@
 		<link rel="stylesheet" type="text/css" href="css/jquery.fullPage.css" />
 		<link rel="stylesheet" type="text/css" href="css/jquery.pagepiling.css" />
 		<link rel="stylesheet" type="text/css" href="css/style.css" />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
 
 		<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
 		<!--<script src="vendors/jquery.easings.min.js"></script>-->
@@ -26,26 +27,21 @@
 		<script type="text/javascript" src="js/script.js"></script>
 		<script type="text/javascript" src="js/snap.svg-min.js"></script>
 
-		<!--<style type="text/css">
-			body,
-			html,
-			div {
-			  background: #292a38;
-			  margin: 0;
-			  padding: 0;
-			  width: 100%;
-			  height: 100%;
-			  text-align: center;
-			}
+		<style type="text/css">
 			svg {
-			  width: 200px;
-			  height: 150px;
+			  width: 46px;
+			  height: 45px;
 			  cursor: pointer;
 			  -webkit-transform: translate3d(0, 0, 0);
 			  -moz-transform: translate3d(0, 0, 0);
 			  -o-transform: translate3d(0, 0, 0);
 			  -ms-transform: translate3d(0, 0, 0);
 			  transform: translate3d(0, 0, 0);
+			    border-radius: 50%;
+			    paint-order: 1;
+			    padding-right: 1px;
+			    padding-bottom: 1px;
+			    background: rgba(255,255,255,.5);
 			}
 			path {
 			  fill: none;
@@ -80,13 +76,19 @@
 			(function() {
 				var i, resize;
 
-				i = setInterval(function() {
-				return $("div").toggleClass("cross");
+				i = setTimeout(function() {
+				//return $("div").toggleClass("cross");
 				}, 1500);
 
-				$("div").click(function() {
+				$(document).on('click', '#menu', function() {
 				clearInterval(i);
-				return $("div").toggleClass("cross");
+				$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
+				return $(this).toggleClass("cross");
+				});
+
+				$(document).on('click', '.cross', function() {
+				clearInterval(i);
+				$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
 				});
 
 				resize = function() {
@@ -95,32 +97,24 @@
 				});
 				};
 
-				$(window).resize(resize);
+				//$(window).resize(resize);
 
-				resize();
+				//resize();
 
 			}).call(this);
-		</script>-->
+		</script>
   </head>
   <body>
 
+  		<div class="modal-menu" style="display: none;position: fixed;background: yellow;top: 0;bottom: 0;right: 0;left: 0; z-index: 1;">Example</div>
 	
-		<!--<div>
+		<div id="menu">
 			<svg viewBox="0 0 800 600">
 				<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
 				<path d="M300,320 L540,320" id="middle"></path>
 				<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
 			</svg>
-		</div>-->
-		<ul id="menu">
-			<div style="float: right;">MENU</div>
-			<div class="hidden">			
-				<li data-menuanchor="page1"><a href="#page1">First slide</a></li>
-				<li data-menuanchor="page2"><a href="#page2">Second slide</a></li>
-				<li data-menuanchor="page3"><a href="#page3">Third slide</a></li>
-				<li data-menuanchor="page4"><a href="#page4">Fourth slide</a></li>
-			</div>
-		</ul>
+		</div>
 
 		<div class="hidden cd-modal" data-modal="modal-trigger">
 	      	<div class="cd-svg-bg" 

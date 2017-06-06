@@ -141,8 +141,8 @@
 #menu {
 	position: fixed;
 	z-index: 9;
-	right: 20px;
-	top: 20px;
+	right: 40px;
+	top: 26px;
 }
 
 .guide {
