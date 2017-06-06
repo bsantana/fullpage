@@ -5,7 +5,8 @@ $(document).ready(function() {
 	$('#fullpage').fullpage({
 	  scrollHorizontally: true,
 	  navigation: true,
-	  showActiveTooltip: true
+	  showActiveTooltip: true,
+	  scrollOverflow: true
 	  /*onLeave: function(index, nextIndex, direction) {
 	  	 console.log(index);
 	  	console.log(nextIndex);
