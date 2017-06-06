@@ -147,6 +147,35 @@
 	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
 } /* End */
 
+/** Seção 7 - Slider **/
+#fullpage #page7 .slide:nth-child(1) {
+	background: url("../images/page7/icons_svg/Icones-13.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+}
+#fullpage #page7 .slide:nth-child(2) {
+	background: url("../images/page7/icons_svg/Icones-14.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+}
+#fullpage #page7 .slide:nth-child(3) {
+	background: url("../images/page7/icons_svg/Icones-15.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+}
+#fullpage #page7 .slide:nth-child(4) {
+	background: url("../images/page7/icons_svg/Icones-16.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+}
+#fullpage #page7 .slide:nth-child(5) {
+	background: url("../images/page7/icons_svg/Icones-17.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+}
+#fullpage #page7 .slide:nth-child(6) {
+	background: url("../images/page7/icons_svg/Icones-18.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+} /* End */
+
+/** TESTANDO **/
+#fullpage #page8 .slide:nth-child(1) {
+	background: url("../images/page5/modal/Imagens-19.svg") no-repeat, #f04950;
+	background-blend-mode: hard-light;
+}
+#fullpage #page8 .slide:nth-child(2) {
+	background: url("../images/page7/icons_svg/Icones-14.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+} /** END TESTANDO **/
+
 #menu {
 	position: fixed;
 	z-index: 9;
@@ -233,6 +262,15 @@
 }
 .fp-controlArrow.fp-next {
 	border-width: 28.5px 0 28.5px 25px;
+}
+
+#modalToSection {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background: blue;
 }
 
 /** @@@@ RESPONSIVO @@@ **/

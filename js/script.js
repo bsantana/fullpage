@@ -49,32 +49,50 @@ afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 
 
 //$(document).ready(function() {
-	$('.pagepiling').pagepiling({
-		direction: 'vertical',
-		sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
-		sectionSelector: '.section2',
-	});
+
 //});
 
 	//var $section2 = $('.section:eq(1)').detach();
 	//var $section3 = $('.section:eq(2)').detach();
+	function init() {
+		$('.pagepiling').pagepiling({
+			direction: 'vertical',
+			sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
+			sectionSelector: '.section2',
+		});
+	}
+
+
 
 	//$($section2).appendTo('#fullpage');
+	var $modalOne = 
+		'<div class="pagepiling">'+
+			'<div class="section2">Some section</div>'+
+			'<div class="section2">Some section</div>'+
+			'<div class="section2">Some section</div>'+
+			'<div class="section2">Some section</div>'+
+			'<button class="buttonOff modal-close">X</button>'+
+		'</div>';
 
 	//adding the actions to the buttons
 	$(document).on('click', '.buttonOn', function() {
 	  $.fn.fullpage.setAllowScrolling(false);
 	  $.fn.fullpage.setKeyboardScrolling(false);
-	  $(this).parents('.section').addClass('fix').find('.content').hide().next().addClass('modalOn');
+	  //$(this).parents('.section').addClass('fix').find('.content').hide().next().addClass('modalOn');
+	  $('.cd-svg-bg').hide();
+		$('#modalToSection').removeClass('hidden');
+	  $('#modalToSection').append($modalOne);
+	  init();
 	  setTimeout(function() {
-						$('.cd-svg-bg').hide();
+						//$('.cd-svg-bg').hide();
 		}, duration)
 	});
 
 	$(document).on('click', '.buttonOff', function() {
 	  $.fn.fullpage.setAllowScrolling(true);
 	  $.fn.fullpage.setKeyboardScrolling(true);
-	  $(this).parents('.section').removeClass('fix').find('.content').show().next().removeClass('modalOn');
+	  $('#modalToSection').html('').addClass('hidden');
+	  //$(this).parents('.section').removeClass('fix').find('.content').show().next().removeClass('modalOn');
 	  	  $('.cd-svg-bg').show();
 	});
 
