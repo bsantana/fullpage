@@ -225,6 +225,16 @@
     background: transparent;
 }
 
+.fp-controlArrow {
+	top: 90%;
+}
+.fp-controlArrow.fp-prev {
+	border-width: 28.5px 25px 28.5px 0;
+}
+.fp-controlArrow.fp-next {
+	border-width: 28.5px 0 28.5px 25px;
+}
+
 /** @@@@ RESPONSIVO @@@ **/
 
 @media (max-width: 767px) {
@@ -233,11 +243,11 @@
 		height: 400px;
 	}
 	.guide {
-		left: 10px;
+		left: 15px;
 		right: initial;
 	}
 	.page-title {
-		font-size: 2em;
+		font-size: 1.5em;
 	}
 }
 @media (min-width: 768px) {
