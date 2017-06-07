@@ -22,9 +22,6 @@
 }
 #fullpage #page2 .slide:nth-child(3) {
 	background: linear-gradient(to right, #f6921e, #f05a24, #c72128);
-}
-#fullpage #page2 .slide:nth-child(3) {
-	background: url("../images/Layout_v6.1-30.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
 } /* End */
 
 /* Definindo cor de fundo de cada categoria do slider */
@@ -103,7 +100,8 @@
 	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 8.svg") #fff no-repeat;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(10):hover {
-	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 9.svg") #fff no-repeat;
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 9.svg") #fff no-repeat center 10px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(11):hover {
 	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 10.svg") #fff no-repeat;
@@ -201,10 +199,85 @@
 
 /** Seção 4 - Slider **/
 #fullpage #page4 .slide:nth-child(1) {
-	background: linear-gradient(to bottom, #c77c2c, #eda64d, #f2c081);
+    -webkit-animation-name: background;
+    -webkit-animation-duration: 60s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: step-end;
+    -webkit-animation-iteration-count: infinite;
 }
-#fullpage #page4 .slide:nth-child(2) {
-	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
+
+@-webkit-keyframes background {
+    0% {
+        background: url("../images/page4/Imagens-background-32.png") no-repeat;
+        background-size: 100%;
+    }
+    12% {
+        background: url("../images/page4/Imagens-background-33.png") no-repeat;
+        background-size: 100%;
+    }
+
+    24% {
+        background: url("../images/page4/Imagens-background-34.png") no-repeat;
+        background-size: 100%;
+    }
+
+    37% {
+        background: url("../images/page4/Imagens-background-35.png") no-repeat;
+        background-size: 100%;
+    }
+
+	49% {
+        background: url("../images/page4/Imagens-background-36.png") no-repeat;
+        background-size: 100%;
+    }
+    60% {
+        background: url("../images/page4/Imagens-background-37.png") no-repeat;
+        background-size: 100%;
+    }
+
+    75% {
+        background: url("../images/page4/Imagens-background-38.png") no-repeat;
+        background-size: 100%;
+    }
+
+    100% {
+        background: url("../images/page4/Imagens-background-39.png") no-repeat;
+        background-size: 100%;
+    }
+} /* End */
+
+/** Seção 5 - Slider **/
+#fullpage #page5 .slide:nth-child(1) {
+	background: url("../images/page5/Imagens-15.png") no-repeat center, #D8DF21;
+}
+#fullpage #page5 .slide:nth-child(2) {
+	background: #D8DF21;
+} 
+#fullpage #page5 .slide:nth-child(1) button.one,
+#fullpage #page5 .slide:nth-child(2) button.one {
+	background: #D8DF21;
+	display: flex;
+	margin: auto;
+} /* End */
+
+/** Seção 6 - Slider **/
+#fullpage #page6 .slide:nth-child(1) {
+	background: url("../images/page6/vagas.svg") no-repeat, linear-gradient(to right, #D8DF21, #87D000);
+}
+#fullpage #page6 .slide:nth-child(2) {
+	background: url("../images/page6/treinamento.svg") no-repeat, linear-gradient(to right, #87D000, #29B423);
+}
+#fullpage #page6 .slide:nth-child(3) {
+	background: url("../images/page6/exame.svg") no-repeat, linear-gradient(to right, #29B423, #00D078);
+}
+#fullpage #page6 .slide:nth-child(4) {
+	background: url("../images/page6/contrato.svg") no-repeat, linear-gradient(to right, #00D078, #008D69);
+}
+#fullpage #page6 .slide:nth-child(5) {
+	background: url("../images/page6/EPI.svg") no-repeat, linear-gradient(to right, #008D69, #06A3A5);
+}
+#fullpage #page6 .slide:nth-child(6) {
+	background: url("../images/page6/implantacao.svg") no-repeat, linear-gradient(to right, #06A3A5, #06D0E5);
 } /* End */
 
 /** Seção 7 - Slider **/
@@ -266,6 +339,7 @@
     margin-right: 9%;
     margin-top: 30px;
     z-index: 2;
+    font-size: 1.1em;
 }
 
 .buttonOff,
@@ -302,6 +376,11 @@
 .page-title {
 	color: #fff;
 	font-size: 2.8em;
+	text-shadow: 2px 2px 6px rgba(51, 51, 51, 0.67);
+}
+
+.page-title.no-shadow {
+	text-shadow: initial;
 }
 
 .textRight {
@@ -337,6 +416,9 @@
 }
 .fp-controlArrow.fp-next {
 	border-width: 28.5px 0 28.5px 25px;
+}
+#fp-nav ul li a span {
+	background: #fff;
 }
 
 #modalToSection {

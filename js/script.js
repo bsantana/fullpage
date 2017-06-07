@@ -3,47 +3,31 @@ $(document).ready(function() {
 	var slideIndex  = 1,
 		sliding     = false;
 	$('#fullpage').fullpage({
-	  scrollHorizontally: true,
-	  navigation: true,
-	  showActiveTooltip: true,
-	  scrollOverflow: true
-	  /*onLeave: function(index, nextIndex, direction) {
-	  	 console.log(index);
-	  	console.log(nextIndex);
-	  	console.log(direction);
-    if(index == 2 && !sliding) {
+		scrollHorizontally: true,
+		navigation: true,
+		showActiveTooltip: true,
+		scrollOverflow: true,
+		/*onLeave: function(index, nextIndex, direction) {
+		  	console.log(index);
+		  	console.log(nextIndex);
+		  	console.log(direction);
 
-    		// if(direction == 'down' && slideIndex < 2)
-        if(direction == 'down' && slideIndex < 2) {
 
-            sliding = true;
-            $.fn.fullpage.moveSlideRight();
-            //slideIndex++;
-            return false;
+		},
 
-            // else if(direction == 'up' && slideIndex > 1)
-        } else if(direction == 'up' && slideIndex >= 1) {
+		afterLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 
-            sliding = true;
-            $.fn.fullpage.moveSlideLeft();
-            //slideIndex--;
-            return false;
+		    console.log(index)
+		    console.log(slideIndex)
+		    if (index == 4) {
+		    	setTimeout(function() {
+		    		$.fn.fullpage.moveSlideRight();
+		    		alert(index)
+		    	}, 3000);
+		    } else if (index != 4){
+		    }
 
-        }
-
-    } else if(sliding) {
-
-        return false;
-
-    }
-
-},
-
-afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-
-    sliding = false;
-
-}*/
+		}*/
 
 	});
 
