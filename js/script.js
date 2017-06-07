@@ -55,10 +55,14 @@ afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 	//var $section2 = $('.section:eq(1)').detach();
 	//var $section3 = $('.section:eq(2)').detach();
 	function init() {
-		$('.pagepiling').pagepiling({
+		/*$('.pagepiling').pagepiling({
 			direction: 'vertical',
 			sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 			sectionSelector: '.section2',
+		});*/
+		$('#page8').pagepiling({
+			direction: 'vertical',
+			sectionSelector: '.modal1',
 		});
 	}
 
@@ -74,26 +78,95 @@ afterSlideLoad: function(anchorLink, index, slideAnchor, slideIndex) {
 			'<button class="buttonOff modal-close">X</button>'+
 		'</div>';
 
+	var $modalTwo = 
+		'<div id="page8" class="section">'+
+	      	'<div class="content">'+
+		    	'<div class="modalClose">'+
+			    	'<div class="cross buttonOff">'+
+						'<svg viewBox="0 0 800 600">'+
+							'<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>'+
+							'<path d="M300,320 L540,320" id="middle"></path>'+
+							'<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>'+
+						'</svg>'+
+					'</div>'+
+			    	'<p>Fechar</p>'+
+		    	'</div>'+
+		    	'<div class="slide1 modal1">'+
+		    		'<div class="container-fluid">'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-6" style="">'+
+		    				'</div>'+
+		    				'<div class="col-sm-5" style="">'+
+		    					'<p class="page-title textRight">Diária</p>'+
+		    					'<p class="page-title textRight sub-title">Mão de obra rápida para serviços rápidos</p>'+
+		    				'</div>'+
+		    			'</div>'+
+		    		'</div>'+
+		    	'</div>'+
+				'<div class="slide2 modal1">'+
+		    		'<div class="container-fluid">'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-6">'+
+		    				'</div>'+
+		    				'<div class="col-sm-5">'+
+		    					'<p class="page-title textRight">Mensal</p>'+
+		    					'<p class="page-title textRight sub-title">Simplifique sua administração e ganhe produtividade</p>'+
+		    				'</div>'+
+		    			'</div>'+
+		    		'</div>'+
+		    	'</div>'+
+				'<div class="slide3 modal1">'+
+		    		'<div class="container-fluid">'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-6">'+
+		    				'</div>'+
+		    				'<div class="col-sm-5">'+
+		    					'<p class="page-title">Planos Russel Hora Mais. E ganhe</p>'+
+		    					'<p class="page-title sub-title">'+
+		    						'+ Diárias Gratuitas<br>'+
+		    						'+ Horas Extras Grátis<br>'+
+		    						'+ Pagamento facilitado'+
+		    					'</p>'+
+		    				'</div>'+
+		    			'</div>'+
+		    		'</div>'+
+		    	'</div>'+
+		    	'<div class="slide4 modal1">'+
+		    		'<div class="container-fluid">'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-6">'+
+		    				'</div>'+
+		    				'<div class="col-sm-5">'+
+		    					'<p class="page-title textRight">Recrutamento e seleção</p>'+
+		    					'<p class="page-title textRight sub-title">Nossas modalidades de contratação</p>'+
+		    				'</div>'+
+		    			'</div>'+
+		    		'</div>'+
+		    	'</div>'+
+			'</div>'+
+	    '</div>';
+
 	//adding the actions to the buttons
 	$(document).on('click', '.buttonOn', function() {
-	  $.fn.fullpage.setAllowScrolling(false);
-	  $.fn.fullpage.setKeyboardScrolling(false);
-	  //$(this).parents('.section').addClass('fix').find('.content').hide().next().addClass('modalOn');
-	  $('.cd-svg-bg').hide();
-		$('#modalToSection').removeClass('hidden');
-	  $('#modalToSection').append($modalOne);
-	  init();
-	  setTimeout(function() {
-						//$('.cd-svg-bg').hide();
-		}, duration)
+		$.fn.fullpage.setAllowScrolling(false);
+		$.fn.fullpage.setKeyboardScrolling(false);
+		//$(this).parents('.section').addClass('fix').find('.content').hide().next().addClass('modalOn');
+		$('#modalToSection').removeClass('hidden').addClass('animated bounceInRight').removeClass('bounceOutRight');
+		$('#modalToSection').append($modalTwo);
+		init();
+		$('#fp-nav').hide();
 	});
 
 	$(document).on('click', '.buttonOff', function() {
 	  $.fn.fullpage.setAllowScrolling(true);
 	  $.fn.fullpage.setKeyboardScrolling(true);
-	  $('#modalToSection').html('').addClass('hidden');
+	  $('#modalToSection').addClass('animated bounceOutRight').removeClass('bounceInRight');
+	  $('#fp-nav').show();
+	  $('#pp-nav').remove();
 	  //$(this).parents('.section').removeClass('fix').find('.content').show().next().removeClass('modalOn');
-	  	  $('.cd-svg-bg').show();
+	  	setTimeout(function() {
+			$('#modalToSection').html('');
+		}, duration)
 	});
 
 	// Efeito do Modal com SVG

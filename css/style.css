@@ -4,6 +4,13 @@
 #fullpage #page1 {
 	background: linear-gradient(to right, #7c2327, #cd3a40, #c72128);
 }
+#fullpage #page1 .col-sm-12:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+#fullpage #page1 .col-sm-12:nth-child(2) {
+	padding-bottom: 40px;
+}
 
 /* Definição de cores das seções e sliders */
 /** Seção 2 - Slider **/
@@ -23,76 +30,128 @@
 /* Definindo cor de fundo de cada categoria do slider */
 /** Seção 3 - Slider **/
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(2) { /* Definindo cores da categoria */
-	background: #EDA64D;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 1.svg") #EDA64D no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(3) {
-	background: #83AE5D;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 2.svg") #83AE5D no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(4) {
-	background: #7F6486;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 3.svg") #7F6486 no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(5) {
-	background: #8BB42B;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 4.svg") #8BB42B no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(6) {
-	background: #66A2C1;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 5.svg") #66A2C1 no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(7) {
-	background: #CC362D;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 6.svg") #CC362D no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(8) {
-	background: #FF5507;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 7.svg") #FF5507 no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(9) {
-	background: #956441;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 8.svg") #956441 no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(10) {
-	background: #E5742D;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 9.svg") #E5742D no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(11) {
-	background: #33855F;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 10.svg") #33855F no-repeat center 20px;
+	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(12) {
-	background: #2C449D;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 11.svg") #2C449D no-repeat center 20px;
+	background-size: 80%;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13) { /* END */
-	background: #C06096;
-}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13) { 
+	background: url("../images/page3/icons_svg/Icones_Prancheta 12.svg") #C06096 no-repeat center 20px;
+	background-size: 80%;
+} /* END */
+
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(2):hover { /* Definindo Hover das cores da categoria */
-	background: #EDA64D;
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 1.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(3) {
-	background: #83AE5D;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(3):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 2.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(4) {
-	background: #7F6486;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(4):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 3.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(5) {
-	background: #8BB42B;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(5):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 4.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(6) {
-	background: #66A2C1;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(6):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 5.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(7) {
-	background: #CC362D;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(7):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 6.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(8) {
-	background: #FF5507;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(8):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 7.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(9) {
-	background: #956441;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(9):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 8.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(10) {
-	background: #E5742D;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(10):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 9.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(11) {
-	background: #33855F;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(11):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 10.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(12) {
-	background: #2C449D;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(12):hover {
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 11.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13) { /* END */
-	background: #C06096;
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13):hover { /* END */
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 12.svg") #fff no-repeat;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(2):hover p { /* Definindo Hover das cores da categoria */
+	color: #EDA64D;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(3):hover p { /* Definindo Hover das cores da categoria */
+	color: #83AE5D;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(4):hover p { /* Definindo Hover das cores da categoria */
+	color: #7F6486;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(5):hover p { /* Definindo Hover das cores da categoria */
+	color: #8BB42B;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(6):hover p { /* Definindo Hover das cores da categoria */
+	color: #66A2C1;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(7):hover p { /* Definindo Hover das cores da categoria */
+	color: #CC362D;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(8):hover p { /* Definindo Hover das cores da categoria */
+	color: #FF5507;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(2):hover p { /* Definindo Hover das cores da categoria */
+	color: #EDA64D;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(9):hover p { /* Definindo Hover das cores da categoria */
+	color: #956441;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(10):hover p { /* Definindo Hover das cores da categoria */
+	color: #E5742D;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(11):hover p { /* Definindo Hover das cores da categoria */
+	color: #33855F;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(12):hover p { /* Definindo Hover das cores da categoria */
+	color: #2C449D;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13):hover p { /* Definindo Hover das cores da categoria */
+	color: #C06096;
 }
 #fullpage #page3 .slide:nth-child(2) {
 	background: linear-gradient(to bottom, #c77c2c, #eda64d, #f2c081);
@@ -115,10 +174,11 @@
 #fullpage #page3 .slide:nth-child(1) .row div p {
 	text-align: center;
 	color: #fff;
+	line-height: 0px;
+	font-size: 1.2em;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:not(:nth-child(1)):hover {
 	overflow: hidden;
-    background-color: #fff;
     z-index: 999;
     -moz-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -149,31 +209,44 @@
 
 /** Seção 7 - Slider **/
 #fullpage #page7 .slide:nth-child(1) {
-	background: url("../images/page7/icons_svg/Icones-13.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+	background: url("../images/page7/icons_svg/Icones-13.svg") no-repeat, #770c19;
 }
 #fullpage #page7 .slide:nth-child(2) {
-	background: url("../images/page7/icons_svg/Icones-14.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+	background: url("../images/page7/icons_svg/Icones-14.svg") no-repeat, #662d90;
 }
 #fullpage #page7 .slide:nth-child(3) {
-	background: url("../images/page7/icons_svg/Icones-15.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+	background: url("../images/page7/icons_svg/Icones-15.svg") no-repeat, #265b70;
 }
 #fullpage #page7 .slide:nth-child(4) {
-	background: url("../images/page7/icons_svg/Icones-16.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+	background: url("../images/page7/icons_svg/Icones-16.svg") no-repeat, #00a293;
 }
 #fullpage #page7 .slide:nth-child(5) {
-	background: url("../images/page7/icons_svg/Icones-17.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+	background: url("../images/page7/icons_svg/Icones-17.svg") no-repeat, #1f944b;
 }
 #fullpage #page7 .slide:nth-child(6) {
-	background: url("../images/page7/icons_svg/Icones-18.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+	background: url("../images/page7/icons_svg/Icones-18.svg") no-repeat, #e28307;
 } /* End */
 
 /** TESTANDO **/
-#fullpage #page8 .slide:nth-child(1) {
+#page8 .slide1 {
 	background: url("../images/page5/modal/Imagens-19.svg") no-repeat, #f04950;
 	background-blend-mode: hard-light;
 }
-#fullpage #page8 .slide:nth-child(2) {
-	background: url("../images/page7/icons_svg/Icones-14.svg") no-repeat, linear-gradient(to right, #f6921e, #f05a24, #c72128);
+#page8 .slide2 {
+	background: url("../images/page5/modal/Imagens-20.svg") no-repeat, #8073b2;
+	background-blend-mode: hard-light;
+}
+#page8 .slide3 {
+	background: url("../images/page5/modal/Imagens-21.svg") no-repeat, #66a2c1;
+	background-blend-mode: hard-light;
+}
+#page8 .slide4 {
+	background: url("../images/page5/modal/Imagens-22.svg") no-repeat, #7a9c6e;
+	background-blend-mode: hard-light;
+} 
+
+#page8 .page-title.sub-title {
+	font-size: 2em;
 } /** END TESTANDO **/
 
 #menu {
@@ -204,8 +277,8 @@
 
 .buttonOff {
 	float: right;
-	top: 20px;
-	right: 20px;
+	top: 26px;
+	right: 40px;
 	position: relative;
 	z-index: 5;
 }
@@ -246,12 +319,14 @@
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: 3px solid #333333;
+    border: 3px solid #fff;
+    font-size: 1.3em;
     padding: 0.9rem 3rem;
     -webkit-transition: all .2s ease-in-out;
     -o-transition: all .2s ease-in-out;
     transition: all .2s ease-in-out;
     background: transparent;
+    color: #fff;
 }
 
 .fp-controlArrow {
@@ -271,6 +346,33 @@
 	right: 0;
 	left: 0;
 	background: blue;
+	z-index: 9;
+}
+
+.modalClose {
+    position: absolute;
+    width: 258px;
+    height: 80px;
+    z-index: 5;
+    right: 0;
+}
+
+.modalClose p {
+	margin-top: 30px;
+	margin-right: 50px;
+	font-size: 1.9em;
+	color: #fff;
+	float: right;
+}
+
+.saiba-mais.btn-home {
+	display: flex;
+	margin: auto;
+	color: #cd3a40;
+	background: #fff;
+	border-radius: 4px;
+	padding: 4px 44px;
+	font-size: 1.6em;
 }
 
 /** @@@@ RESPONSIVO @@@ **/
@@ -286,6 +388,10 @@
 	}
 	.page-title {
 		font-size: 1.5em;
+	}
+	#page8 .page-title {
+		text-shadow: 2px 2px 6px black;
+		font-size: 2.5em;
 	}
 }
 @media (min-width: 768px) {
