@@ -307,27 +307,57 @@
 	background: url("../images/page7/icons_svg/Icones-18.svg") no-repeat, #e28307;
 } /* End */
 
-/** TESTANDO **/
-#page8 .slide1 {
+/** Modal 1 - Modal da Seção 5 **/
+#modal1 .slide1 {
 	background: url("../images/page5/modal/Imagens-19.svg") no-repeat, #f04950;
 	background-blend-mode: hard-light;
 }
-#page8 .slide2 {
+#modal1 .slide2 {
 	background: url("../images/page5/modal/Imagens-20.svg") no-repeat, #8073b2;
 	background-blend-mode: hard-light;
 }
-#page8 .slide3 {
+#modal1 .slide3 {
 	background: url("../images/page5/modal/Imagens-21.svg") no-repeat, #66a2c1;
 	background-blend-mode: hard-light;
 }
-#page8 .slide4 {
+#modal1 .slide4 {
 	background: url("../images/page5/modal/Imagens-22.svg") no-repeat, #7a9c6e;
 	background-blend-mode: hard-light;
 } 
 
-#page8 .page-title.sub-title {
+#modal1 .page-title.sub-title {
 	font-size: 2em;
-} /** END TESTANDO **/
+} /** END **/
+
+/** Modal da categoria administrativo - Modal da Seção 3 **/
+#modal_administrativo,
+#modal_administrativo a,
+#modal_administrativo .modal-title {
+	background: #85b5cd;
+	color: #264758;
+	text-decoration: none;
+}
+#modal_administrativo .modal-text {
+	font-size: 1.8em;
+}
+#modal_administrativo ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_administrativo .saiba-mais-modal {
+	border-color: #264758;
+} 
+#modal_administrativo hr {
+	border-color: #264758;
+} /** END **/
+
+.bg-modal {
+	width: 100%;
+}
+.modal-title {
+	text-align: center;
+	text-shadow: initial !important;
+}
 
 #menu {
 	position: fixed;
@@ -478,6 +508,11 @@
 	background: #fff;
 }
 
+.saiba-mais-modal {
+	display: flex;
+	margin: auto;
+}
+
 #modalToSection {
 	position: fixed;
 	top: 0;
@@ -531,6 +566,10 @@
 	#page8 .page-title {
 		text-shadow: 2px 2px 6px black;
 		font-size: 2.5em;
+	}
+	#modal_administrativo .modal-text,
+	#modal_administrativo ul {
+		font-size: 1.2em;
 	}
 }
 @media (min-width: 768px) {

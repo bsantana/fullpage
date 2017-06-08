@@ -26,7 +26,7 @@ $(document).ready(function() {
 			sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 			sectionSelector: '.section2',
 		});*/
-		$('#page8').pagepiling({
+		$('#modal1').pagepiling({
 			direction: 'vertical',
 			sectionSelector: '.modal1',
 		});
@@ -35,17 +35,17 @@ $(document).ready(function() {
 
 
 	//$($section2).appendTo('#fullpage');
-	var $modalOne = 
+	/*var $modalOne = 
 		'<div class="pagepiling">'+
 			'<div class="section2">Some section</div>'+
 			'<div class="section2">Some section</div>'+
 			'<div class="section2">Some section</div>'+
 			'<div class="section2">Some section</div>'+
 			'<button class="buttonOff modal-close">X</button>'+
-		'</div>';
+		'</div>';*/
 
-	var $modalTwo = 
-		'<div id="page8" class="section">'+
+	var $modalOne = 
+		'<div id="modal1" class="section">'+
 	      	'<div class="content">'+
 		    	'<div class="modalClose">'+
 			    	'<div class="cross buttonOff">'+
@@ -118,7 +118,7 @@ $(document).ready(function() {
 		$.fn.fullpage.setKeyboardScrolling(false);
 		//$(this).parents('.section').addClass('fix').find('.content').hide().next().addClass('modalOn');
 		$('#modalToSection').removeClass('hidden').addClass('animated bounceInRight').removeClass('bounceOutRight');
-		$('#modalToSection').append($modalTwo);
+		$('#modalToSection').append($modalOne);
 		init();
 		$('#fp-nav').hide();
 	});
