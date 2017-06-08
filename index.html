@@ -83,12 +83,14 @@
 				$(document).on('click', '#menu', function() {
 				clearInterval(i);
 				$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
+				$('#fp-nav').hide();
 				return $(this).toggleClass("cross");
 				});
 
 				$(document).on('click', '.cross', function() {
 				clearInterval(i);
 				$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
+				$('#fp-nav').show();
 				});
 
 				resize = function() {
@@ -106,7 +108,38 @@
 </head>
 <body>
 
-  		<div class="modal-menu" style="display: none;position: fixed;background: #1C3542;top: 0;bottom: 0;right: 0;left: 0; z-index: 1;">Example</div>
+  		<div class="modal-menu" style="display: none;position: fixed;background: #1C3542;top: 0;bottom: 0;right: 0;left: 0;color: #fff; z-index: 1;">
+  			<div class="container-fluid">
+  				<div class="row sectionUp">
+  					<div class="col-sm-4 col-sm-offset-2">
+  						<ul class="page-title oque-somos">
+  							<li><a><div class="menu-arrow"></div><span class="blueLink">O Que Somos<span></a></li>
+  							<li><a><div class="menu-arrow"></div><span>Segmentos<span></a></li>
+  							<li><a><div class="menu-arrow"></div><span>Nossos Clientes<span></a></li>
+  							<li><a><div class="menu-arrow"></div><span>Como Funciona<span></a></li>
+  							<li><a><div class="menu-arrow" style="top: 13%;"></div><span>Nosso Processo<span></a>
+  								<ul><li><a><div class="menu-arrow"></div><span>Russel Vagas<span></a></li></ul>
+  							</li>
+  							<li><a><div class="menu-arrow"></div><span>Diferenciais<span></a></li>
+  						</ul>
+  					</div>
+  					<div class="col-sm-5">
+  						<div class="blueLink page-title download-pdf">Download</div>
+  						<ul class="page-title">
+  							<li><a><div class="menu-arrow"></div><span>Sobre Terceirização<span></a></li>
+  							<li><a><div class="menu-arrow"></div><span>Contrate Online<span></a></li>
+  							<li><a><div class="menu-arrow"></div><span>Contato<span></a></li>
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-10 col-sm-offset-1">
+  						<p class="page-title" style="margin: 0;">Russel Serviços</p>
+  						<p class="blueLink">Breve descrição Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
 	
 		<div id="menu">
 			<svg viewBox="0 0 800 600">
@@ -315,12 +348,12 @@
 			<div class="guide">Nossos Clientes</div>
 	    	<div class="slide">
 	    		<div class="container-fluid">
-	    			<div class="row">
+	    			<div class="row sectionUp">
 	    				<div class="col-sm-12">
 	    					<p class="page-title" style="text-align: center;">Muitas empresas já conhecem nossos serviços</p>
 	    				</div>
 	    			</div>
-	    			<div class="row">
+	    			<div class="row sectionUp">
 		    			<div class="col-sm-10 col-sm-offset-1" style="display: flex;justify-content: space-between;">
 		    				<div class="col-sm-2">
 		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-20.svg"><br><br>
@@ -344,30 +377,6 @@
 		    				</div>
 		    			</div>
 	    			</div>
-	    			<div class="row" style="visibility: hidden;">
-		    			<div class="col-sm-10 col-sm-offset-1" style="display: flex;justify-content: space-between;">
-		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-20.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-21.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-22.svg"><br>
-		    				</div>
-		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-23.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-24.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-25.svg"><br>
-		    				</div>
-		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-26.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-27.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-28.svg"><br>
-		    				</div>
-		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-29.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-30.svg"><br>
-		    					<img class="img-responsive" src="images/page4/icons_svg/Icones-31.svg"><br>
-		    				</div>
-		    			</div>
-	    			</div>
 	    		</div>
 	    	</div>
 	    </div>
@@ -376,10 +385,10 @@
 	    	<div class="guide">Como Funciona</div>
 	      	<div class="slide">
 		    	<div class="container-fluid">
-		    		<div class="row">
+		    		<div class="row sectionUp">
 	    				<div class="col-sm-11"><p class="page-title textRight">Atendimento e pedidos</p></div>
 	    			</div>
-	    			<div class="row">
+	    			<div class="row sectionUp">
 	    				<div class="col-sm-5 col-sm-offset-1" style="">
 	    					<p class="page-title">Plataforma online</p>
 	    					<button class="buttonOn saiba-mais one" id="modal-trigger" data-type="cd-modal-trigger">saiba mais</button>

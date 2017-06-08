@@ -1,32 +1,14 @@
 $(document).ready(function() {
-
-	var slideIndex  = 1,
-		sliding     = false;
 	$('#fullpage').fullpage({
 		scrollHorizontally: true,
 		navigation: true,
 		showActiveTooltip: true,
 		scrollOverflow: true,
-		/*onLeave: function(index, nextIndex, direction) {
-		  	console.log(index);
-		  	console.log(nextIndex);
-		  	console.log(direction);
 
-
-		},
-
-		afterLoad: function(anchorLink, index, slideAnchor, slideIndex) {
-
-		    console.log(index)
-		    console.log(slideIndex)
-		    if (index == 4) {
-		    	setTimeout(function() {
-		    		$.fn.fullpage.moveSlideRight();
-		    		alert(index)
-		    	}, 3000);
-		    } else if (index != 4){
-		    }
-
+		/*onSlideLeave: function(anchorLink, index, slideIndex, direction, nextSlideIndex) {
+			console.log(index + 'index');
+			console.log(slideIndex + 'slideIndex');
+			console.log(direction + 'direction');
 		}*/
 
 	});
@@ -152,6 +134,10 @@ $(document).ready(function() {
 			$('#modalToSection').html('');
 		}, duration)
 	});
+
+	document.getElementsByClassName('btn-home')[0].onclick = function() {
+		$.fn.fullpage.moveSectionDown();
+	}
 
 	// Efeito do Modal com SVG
 	var modalTriggerBts = $('button[data-type="cd-modal-trigger"]'),
