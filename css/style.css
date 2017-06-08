@@ -331,6 +331,7 @@
 
 /** Modal da categoria administrativo - Modal da Seção 3 **/
 #modal_administrativo,
+#modal_administrativo .content,
 #modal_administrativo a,
 #modal_administrativo .modal-title {
 	background: #85b5cd;
@@ -344,11 +345,51 @@
 	font-size: 1.8em;
 	padding-left: 20px;
 } 
-#modal_administrativo .saiba-mais-modal {
-	border-color: #264758;
-} 
+#modal_administrativo .saiba-mais-modal,
 #modal_administrativo hr {
 	border-color: #264758;
+} /** END **/
+
+/** Modal da categoria construção civil - Modal da Seção 3 **/
+#modal_const_civil,
+#modal_const_civil .content,
+#modal_const_civil a,
+#modal_const_civil .modal-title {
+	background: #eda64d;
+	color: #7b490f;
+	text-decoration: none;
+}
+#modal_const_civil .modal-text {
+	font-size: 1.8em;
+}
+#modal_const_civil ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_const_civil .saiba-mais-modal,
+#modal_const_civil hr {
+	border-color: #7b490f;
+} /** END **/
+
+/** Modal Consultores Especializados - Modal da Seção 3 **/
+#modal_consultores_espec,
+#modal_consultores_espec .content,
+#modal_consultores_espec a,
+#modal_consultores_espec .modal-title {
+	background: #D8DF21;
+	color: #4C5E1F;
+	text-decoration: none;
+}
+#modal_consultores_espec .modal-text {
+	font-size: 1.8em;
+}
+#modal_consultores_espec ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_consultores_espec .saiba-mais-modal,
+#modal_consultores_espec hr {
+	border-color: #4C5E1F;
 } /** END **/
 
 .bg-modal {

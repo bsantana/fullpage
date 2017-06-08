@@ -26,7 +26,7 @@ $(document).ready(function() {
 			sectionsColor: ['yellow', 'orange', '#C0C0C0', '#ADD8E6'],
 			sectionSelector: '.section2',
 		});*/
-		$('#modal1').pagepiling({
+		$('#modalToSection').pagepiling({
 			direction: 'vertical',
 			sectionSelector: '.modal1',
 		});
@@ -111,6 +111,154 @@ $(document).ready(function() {
 		    	'</div>'+
 			'</div>'+
 	    '</div>';
+
+	var $modal_administrativo = 
+		'<div id="modal_administrativo" class="section">'+
+	    	'<div class="content pp-scrollable">'+
+	    		'<div class="container-fluid">'+
+	    			'<div class="row sectionUp">'+
+	    				'<div class="col-sm-10 col-sm-offset-1">'+
+	    					'<p class="page-title modal-title">Administrativo</p>'+
+	    				'</div>'+
+	    			'</div>'+
+	    			'<div class="row">'+
+	    				'<div class="col-sm-10 col-sm-offset-1">'+
+	    					'<p class="modal-text">&ensp;&ensp;Com a disputa no mercado cada vez mais acirrada, clientes mais exigentes e necessidade de melhoria contínuas em seus processos, empresas de diversos segmentos encontram desafios constantes em suas atividades e um dos seus principais problemas é a escassez de mão de obra qualificada. Neste panorama, organizações do mundo inteiro estão buscando a terceirização como forma de aumentar a competitividade e eficiência.</p>'+
+	    					
+	    					'<img src="images/modal/administrativo.png" class="bg-modal">'+
+
+	    					'<p class="modal-text">&emsp;&ensp;Ao optar por realizar parceria com empresas fornecedoras de mão de obra, o gestor estará economizando tempo, dinheiro e evitando dores de cabeça futuras. Dessa forma, deixa-se a cargo da empresa fornecedora de mão de obra funções como seleção e recrutamento de candidatos, treinamento e capacitação, supervisão de tarefas e envolvimento com encargos trabalhistas. Afinal, como o gestor conseguiria dar conta de suas tarefas e ainda realizar todos esses procedimentos? E se ele conseguir se dedicar à contratação do funcionário para depois perceber que o mesmo não se encaixa ao perfil da empresa?</p>'+
+
+							'<p class="modal-text">&emsp;&ensp;A Russel Serviços, empresa que fornece mão de obra capacitada há mais de 12 anos, assegura que todos esses procedimentos sejam feitos em até 48 horas, implantando o profissional com extrema rapidez. E se o mesmo não se encaixar ao perfil solicitado pela empresa, a Russel Serviços garante a reposição/substituição em até 24 horas e sem custos adicionais. Menos tempo, mais lucro e nenhuma dor de cabeça com contratações.</p>'+
+							'<hr>'+
+	    				'</div>'+
+	    			'</div>'+
+	    			'<div class="row sectionUp">'+
+	    				'<div class="col-sm-10 col-sm-offset-1">'+
+	    					'<p class="page-title modal-title">Confira alguns profissionais do segmento que são disponibilizados pela Russel Serviços:</p>'+
+	    				'</div>'+
+	    				'<div class="col-sm-5 col-sm-offset-1">'+
+	    					'<ul>'+
+	    						'<li><a>Auxiliar de Serviços Gerais</a></li>'+
+	    						'<li><a>Copeira</a></li>'+
+	    						'<li><a>Auxiliar Administrativo</a></li>'+
+	    						'<li><a>Auxiliar de Escritório</a></li>'+
+	    						'<li><a>Recepcionista</a></li>'+
+	    						'<li><a>Operador de Telemarketing</a></li>'+
+	    					'</ul>'+
+	    				'</div>'+
+	    				'<div class="col-sm-5 col-sm-offset-1">'+
+	    					'<ul>'+
+	    						'<li><a>Chefe de Departamento ou Seção</a></li>'+
+	    						'<li><a>Contínuo</a></li>'+
+	    						'<li><a>Digitador</a></li>'+
+	    						'<li><a>Inspetor de Serviços</a></li>'+
+	    						'<li><a>Mensageiro</a></li>'+
+	    						'<li><a>Operador de Copiadora</a></li>'+
+	    					'</ul>'+
+	    				'</div>'+
+	    			'</div>'+
+	    			'<div class="row">'+
+	    				'<div class="col-sm-10 col-sm-offset-1">'+
+	    					'<button class="saiba-mais saiba-mais-modal"><a href="https://www.russelservicos.com.br/categoria-produto/administrativo/" target="_blank">veja mais no site</a></button><br>'+
+	    				'</div>'+
+	    			'</div>'+
+	    		'</div>'+
+	    	'</div>'+
+	    '</div>';
+
+		var $modal_const_civil =
+			'<div id="modal_const_civil" class="section">'+
+		    	'<div class="content pp-scrollable">'+
+		    		'<div class="container-fluid">'+
+		    			'<div class="row sectionUp">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<p class="page-title modal-title">Construção Civil</p>'+
+		    				'</div>'+
+		    			'</div>'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<p class="modal-text">&ensp;&ensp;A construção civil é um dos segmentos que mais terceirizam mão de obra para otimizar tempo e recursos em seus empreendimentos. Com a terceirização, ganha-se produtividade e além disso, o gestor pode se ver livre de todos os encargos trabalhistas, pois a empresa contratada se responsabiliza por todas as obrigações legais, trabalhistas e fiscais. No caso da construção civil, existe ainda um agravante: o tempo de contratação para a seleção e legalização de um profissional para a obra leva cerca de 40 dias. Com a terceirização correta, esse processo demora pouquíssimos dias.</p>'+
+		    					
+		    					'<img src="images/modal/construcao-civil.png" class="bg-modal">'+
+
+								'<p class="modal-text">&emsp;&ensp;Na Russel Serviços o profissional é entregue com toda essa documentação resolvida em até 48 horas, além de realizar a substituição/reposição em até 24 horas e sem custos adicionais, se o trabalhador não se encaixar ao perfil da empresa. Sem perder tempo, sem burocracias, sem precisar fazer seleções e recrutamentos. Não existem dúvidas, terceirizar mão de obra para o segmento de construção civil é a melhor opção. Empresas como Gafisa, Brookfield, EVEN, Odebretcht, Calper, RJZCyrela já entenderam isso e escolheram terceirizar com a Russel Serviços.</p>'+
+								'<hr>'+
+		    				'</div>'+
+		    			'</div>'+
+		    			'<div class="row sectionUp">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<p class="page-title modal-title">Confira alguns profissionais do segmento que são disponibilizados pela Russel Serviços:</p>'+
+		    				'</div>'+
+		    				'<div class="col-sm-5 col-sm-offset-1">'+
+		    					'<ul>'+
+		    						'<li><a>Pedreiro</a></li>'+
+		    						'<li><a>Servente</a></li>'+
+		    						'<li><a>Carpinteiro</a></li>'+
+		    						'<li><a>Operadores de Máquinas</a></li>'+
+		    						'<li><a>Técnico de Segurança do Trabalho</a></li>'+
+		    						'<li><a>Apontador</a></li>'+
+		    						'<li><a>Armador</a></li>'+
+		    					'</ul>'+
+		    				'</div>'+
+		    				'<div class="col-sm-5 col-sm-offset-1">'+
+		    					'<ul>'+
+		    						'<li><a>Bombeiro Hidráulico</a></li>'+
+		    						'<li><a>Calceteiro</a></li>'+
+		    						'<li><a>Carpinteiro de Forma</a></li>'+
+		    						'<li><a>Encarregado Administrativo de Obra</a></li>'+
+		    						'<li><a>Guincheiro</a></li>'+
+		    						'<li><a>Mestre de Obra</a></li>'+
+		    						'<li><a>Gesseiro</a></li>'+
+		    					'</ul>'+
+		    				'</div>'+
+		    			'</div>'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<button class="saiba-mais saiba-mais-modal"><a href="http://www.russelservicos.com.br/categoria-produto/construcao-civil/" target="_blank">veja mais no site</a></button><br>'+
+		    				'</div>'+
+		    			'</div>'+
+		    		'</div>'+
+		    	'</div>'+
+		    '</div>';
+
+		var $modal_consultores_espec =
+			'<div id="modal_consultores_espec" class="section">'+
+		    	'<div class="content pp-scrollable">'+
+		    		'<div class="container-fluid">'+
+		    			'<div class="row sectionUp">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<p class="page-title modal-title">Consultores Especializados</p>'+
+		    				'</div>'+
+		    			'</div>'+
+		    			'<div class="row">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<p class="modal-text">&ensp;&ensp;Possuímos uma equipe de consultores especializados que realizam o atendimento aos clientes, auxiliando na resolução de seus problemas e sugerindo soluções para suas empresas otimizarem tempo e dinheiro em suas contratações de mão de obra.</p>'+
+		    					
+		    					'<img src="images/modal/consultor-especializado.png" class="bg-modal">'+
+
+								'<p class="modal-text">&emsp;&ensp;Nossos colaboradores estão sempre comprometidos com a eficiência no atendimento, qualidade de nossos serviços e na criação de relações comerciais éticas e transparentes.</p>'+
+								'<hr>'+
+		    				'</div>'+
+		    			'</div>'+
+		    			'<div class="row sectionUp">'+
+		    				'<div class="col-sm-10 col-sm-offset-1">'+
+		    					'<p class="page-title modal-title">Estamos sempre presente onde nossos clientes estão com atenção total às suas demandas.</p>'+
+		    				'</div>'+
+		    				'<div class="col-sm-5 col-sm-offset-1">'+
+		    					'<ul>'+
+		    						'<li><a>Reuniões Presenciais e Online</a></li>'+
+		    						'<li><a>Telefone</a></li>'+
+		    						'<li><a>Email</a></li>'+
+		    						'<li><a>Redes Sociais</a></li>'+
+		    						'<li><a>Whatsapp</a></li>'+
+		    						'<li><a>Chat</a></li>'+
+		    					'</ul>'+
+		    				'</div>'+
+		    			'</div>'+
+		    		'</div>'+
+		    	'</div>'+
+		    '</div>';
 
 	//adding the actions to the buttons
 	$(document).on('click', '.buttonOn', function() {
