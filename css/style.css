@@ -174,6 +174,7 @@
 	color: #fff;
 	line-height: 0px;
 	font-size: 1.2em;
+	line-height: 1;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:not(:nth-child(1)):hover {
 	overflow: hidden;
@@ -262,29 +263,32 @@
 	background: #D8DF21;
 	display: flex;
 	margin: auto;
-} 
-#fullpage #page5 .slide:nth-child(1) .fp-tableCell {
-	display: block;
 } /* End */
 
 /** Seção 6 - Slider **/
 #fullpage #page6 .slide:nth-child(1) {
 	background: url("../images/page6/vagas.png") no-repeat, linear-gradient(to right, #D8DF21, #87D000);
+	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(2) {
 	background: url("../images/page6/treinamento.png") no-repeat, linear-gradient(to right, #87D000, #29B423);
+	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(3) {
 	background: url("../images/page6/exame.png") no-repeat, linear-gradient(to right, #29B423, #00D078);
+	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(4) {
 	background: url("../images/page6/contrato.png") no-repeat, linear-gradient(to right, #00D078, #008D69);
+	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(5) {
 	background: url("../images/page6/EPI.png") no-repeat, linear-gradient(to right, #008D69, #06A3A5);
+	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(6) {
 	background: url("../images/page6/implantacao.png") no-repeat, linear-gradient(to right, #06A3A5, #06D0E5);
+	background-size: auto 100%;
 } /* End */
 
 /** Seção 7 - Slider **/
@@ -468,6 +472,237 @@
 	font-weight: 700;
 } /** END **/
 
+/** Modal da categoria logistica - Modal da Seção 3 **/
+#modal_logistica,
+#modal_logistica .content,
+#modal_logistica a,
+#modal_logistica .modal-title {
+	background: #A58FAA;
+	color: #201921;
+	text-decoration: none;
+}
+#modal_logistica .modal-text {
+	font-size: 1.8em;
+}
+#modal_logistica ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_logistica .saiba-mais-modal,
+#modal_logistica hr {
+	border-color: #201921;
+} /** END **/
+
+/** Modal da categoria petróleo e gás - Modal da Seção 3 **/
+#modal_petroleo_gas,
+#modal_petroleo_gas .content,
+#modal_petroleo_gas a,
+#modal_petroleo_gas .modal-title {
+	background: #7DB199;
+	color: #1F2C26;
+	text-decoration: none;
+}
+#modal_petroleo_gas .modal-text {
+	font-size: 1.8em;
+}
+#modal_petroleo_gas ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_petroleo_gas .saiba-mais-modal,
+#modal_petroleo_gas hr {
+	border-color: #1F2C26;
+} /** END **/
+
+/** Modal da categoria verejo - Modal da Seção 3 **/
+#modal_varejo,
+#modal_varejo .content,
+#modal_varejo a,
+#modal_varejo .modal-title {
+	background: #83AE5D;
+	color: #1F2C26;
+	text-decoration: none;
+}
+#modal_varejo .modal-text {
+	font-size: 1.8em;
+}
+#modal_varejo ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_varejo .saiba-mais-modal,
+#modal_varejo hr {
+	border-color: #1F2C26;
+} /** END **/
+
+/** Modal da categoria energia - Modal da Seção 3 **/
+#modal_energia,
+#modal_energia .content,
+#modal_energia a,
+#modal_energia .modal-title {
+	background: #A2C355;
+	color: #201921;
+	text-decoration: none;
+}
+#modal_energia .modal-text {
+	font-size: 1.8em;
+}
+#modal_energia ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_energia .saiba-mais-modal,
+#modal_energia hr {
+	border-color: #201921;
+} /** END **/
+
+/** Modal da categoria inspeção e ends - Modal da Seção 3 **/
+#modal_inspecao_end,
+#modal_inspecao_end .content,
+#modal_inspecao_end a,
+#modal_inspecao_end .modal-title {
+	background: #E08681;
+	color: #382120;
+	text-decoration: none;
+}
+#modal_inspecao_end .modal-text {
+	font-size: 1.8em;
+}
+#modal_inspecao_end ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_inspecao_end .saiba-mais-modal,
+#modal_inspecao_end hr {
+	border-color: #382120;
+} /** END **/
+
+/** Modal da categoria captação e seleção - Modal da Seção 3 **/
+#modal_captacao_selecao,
+#modal_captacao_selecao .content,
+#modal_captacao_selecao a,
+#modal_captacao_selecao .modal-title {
+	background: #D8DF21;
+	color: #4C5E1F;
+	text-decoration: none;
+}
+#modal_captacao_selecao .modal-text {
+	font-size: 1.8em;
+}
+#modal_captacao_selecao ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_captacao_selecao .saiba-mais-modal,
+#modal_captacao_selecao hr {
+	border-color: #4C5E1F;
+} /** END **/
+
+/** Modal da categoria captação e seleção - Modal da Seção 3 **/
+#modal_eventos,
+#modal_eventos .content,
+#modal_eventos a,
+#modal_eventos .modal-title {
+	background: #FF7739;
+	color: #382120;
+	text-decoration: none;
+}
+#modal_eventos .modal-text {
+	font-size: 1.8em;
+}
+#modal_eventos ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_eventos .saiba-mais-modal,
+#modal_eventos hr {
+	border-color: #382120;
+} /** END **/
+
+/** Modal da categoria Operador de maquina - Modal da Seção 3 **/
+#modal_operador_maquina,
+#modal_operador_maquina .content,
+#modal_operador_maquina a,
+#modal_operador_maquina .modal-title {
+	background: #AA8367;
+	color: #382120;
+	text-decoration: none;
+}
+#modal_operador_maquina .modal-text {
+	font-size: 1.8em;
+}
+#modal_operador_maquina ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_operador_maquina .saiba-mais-modal,
+#modal_operador_maquina hr {
+	border-color: #382120;
+} /** END **/
+
+/** Modal da categoria Hotelaria - Modal da Seção 3 **/
+#modal_hotelaria,
+#modal_hotelaria .content,
+#modal_hotelaria a,
+#modal_hotelaria .modal-title {
+	background: #EA9057;
+	color: #382120;
+	text-decoration: none;
+}
+#modal_hotelaria .modal-text {
+	font-size: 1.8em;
+}
+#modal_hotelaria ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_hotelaria .saiba-mais-modal,
+#modal_hotelaria hr {
+	border-color: #382120;
+} /** END **/
+
+/** Modal da categoria aeroporto - Modal da Seção 3 **/
+#modal_aeroporto,
+#modal_aeroporto .content,
+#modal_aeroporto a,
+#modal_aeroporto .modal-title {
+	background: #808FC4;
+	color: #16224F;
+	text-decoration: none;
+}
+#modal_aeroporto .modal-text {
+	font-size: 1.8em;
+}
+#modal_aeroporto ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_aeroporto .saiba-mais-modal,
+#modal_aeroporto hr {
+	border-color: #16224F;
+} /** END **/
+
+/** Modal da categoria restaurantes - Modal da Seção 3 **/
+#modal_restaurantes,
+#modal_restaurantes .content,
+#modal_restaurantes a,
+#modal_restaurantes .modal-title {
+	background: #CD80AB;
+	color: #33202B;
+	text-decoration: none;
+}
+#modal_restaurantes .modal-text {
+	font-size: 1.8em;
+}
+#modal_restaurantes ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_restaurantes .saiba-mais-modal,
+#modal_restaurantes hr {
+	border-color: #33202B;
+} /** END **/
+
 .bg-modal {
 	width: 100%;
 }
@@ -531,6 +766,16 @@
 	color: #fff;
 	font-size: 2.8em;
 	text-shadow: 2px 2px 6px rgba(51, 51, 51, 0.67);
+}
+
+.sub-page-title {
+	font-size: 2em;
+	color: #333;
+}
+
+.page-title.color {
+	color: #333;
+	text-shadow: initial;
 }
 
 .page-title.no-shadow {
