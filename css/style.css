@@ -269,22 +269,22 @@
 
 /** Seção 6 - Slider **/
 #fullpage #page6 .slide:nth-child(1) {
-	background: url("../images/page6/vagas.svg") no-repeat, linear-gradient(to right, #D8DF21, #87D000);
+	background: url("../images/page6/vagas.png") no-repeat, linear-gradient(to right, #D8DF21, #87D000);
 }
 #fullpage #page6 .slide:nth-child(2) {
-	background: url("../images/page6/treinamento.svg") no-repeat, linear-gradient(to right, #87D000, #29B423);
+	background: url("../images/page6/treinamento.png") no-repeat, linear-gradient(to right, #87D000, #29B423);
 }
 #fullpage #page6 .slide:nth-child(3) {
-	background: url("../images/page6/exame.svg") no-repeat, linear-gradient(to right, #29B423, #00D078);
+	background: url("../images/page6/exame.png") no-repeat, linear-gradient(to right, #29B423, #00D078);
 }
 #fullpage #page6 .slide:nth-child(4) {
-	background: url("../images/page6/contrato.svg") no-repeat, linear-gradient(to right, #00D078, #008D69);
+	background: url("../images/page6/contrato.png") no-repeat, linear-gradient(to right, #00D078, #008D69);
 }
 #fullpage #page6 .slide:nth-child(5) {
-	background: url("../images/page6/EPI.svg") no-repeat, linear-gradient(to right, #008D69, #06A3A5);
+	background: url("../images/page6/EPI.png") no-repeat, linear-gradient(to right, #008D69, #06A3A5);
 }
 #fullpage #page6 .slide:nth-child(6) {
-	background: url("../images/page6/implantacao.svg") no-repeat, linear-gradient(to right, #06A3A5, #06D0E5);
+	background: url("../images/page6/implantacao.png") no-repeat, linear-gradient(to right, #06A3A5, #06D0E5);
 } /* End */
 
 /** Seção 7 - Slider **/
@@ -305,6 +305,11 @@
 }
 #fullpage #page7 .slide:nth-child(6) {
 	background: url("../images/page7/icons_svg/Icones-18.svg") no-repeat, #e28307;
+} 
+#fullpage #page7 .slide:nth-child(3) .saiba-mais {
+	border-color: #06f7ce;
+	float: right;
+	color: #06f7ce;
 } /* End */
 
 /** Modal 1 - Modal da Seção 5 **/
@@ -371,7 +376,7 @@
 	border-color: #7b490f;
 } /** END **/
 
-/** Modal Consultores Especializados - Modal da Seção 3 **/
+/** Modal Consultores Especializados - Modal da Seção 5 **/
 #modal_consultores_espec,
 #modal_consultores_espec .content,
 #modal_consultores_espec a,
@@ -390,6 +395,77 @@
 #modal_consultores_espec .saiba-mais-modal,
 #modal_consultores_espec hr {
 	border-color: #4C5E1F;
+} /** END **/
+
+/** Modal Plataforma Online - Modal da Seção 5 **/
+#modal_plataforma_on,
+#modal_plataforma_on .content,
+#modal_plataforma_on a,
+#modal_plataforma_on .modal-title {
+	background: #D8DF21;
+	color: #4C5E1F;
+	text-decoration: none;
+}
+#modal_plataforma_on .modal-text {
+	font-size: 1.8em;
+}
+#modal_plataforma_on ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_plataforma_on .saiba-mais-modal,
+#modal_plataforma_on hr {
+	border-color: #4C5E1F;
+} /** END **/
+
+/** Modal Prêmios - Modal da Seção 5 **/
+#modal_premios,
+#modal_premios .content,
+#modal_premios a,
+#modal_premios .modal-title {
+	background: #265b70;
+	color: #a8bdc6;
+	text-decoration: none;
+}
+#modal_premios .modal-text {
+	font-size: 1.8em;
+}
+#modal_premios ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+} 
+#modal_premios .saiba-mais-modal,
+#modal_premios hr {
+	border-color: #a8bdc6;
+}
+#modal_premios .bg1 {
+	background: #7496a4;
+	border-top: 20px solid #517c8d;
+	color: #265b70;
+	font-size: 1.2em;
+}
+#modal_premios .bg2 {
+	background: #97b0bb;
+	color: #265b70;
+	font-size: 1.2em;
+}
+#modal_premios .bg3 {
+	background: #b9cbd1;
+	color: #265b70;
+	font-size: 1.2em;
+}
+#modal_premios .bg1 img,
+#modal_premios .bg2 img,
+#modal_premios .bg3 img {
+	width: 60%;
+	padding: 10px;
+	float: right;
+}
+#modal_premios .bg1 .title,
+#modal_premios .bg2 .title,
+#modal_premios .bg3 .title {
+	font-size: 1.3em;
+	font-weight: 700;
 } /** END **/
 
 .bg-modal {
