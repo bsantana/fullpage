@@ -87,11 +87,11 @@ $(document).ready(function() {
 		    				'<div class="col-sm-6">'+
 		    				'</div>'+
 		    				'<div class="col-sm-5">'+
-		    					'<p class="page-title">Planos Russel Hora Mais. Ganhe..</p>'+
+		    					'<p class="page-title">Planos Russel Hora Mais. Ganhe:</p>'+
 		    					'<p class="page-title sub-title">'+
 		    						'+ Diárias Gratuitas<br>'+
 		    						'+ Horas Extras Grátis<br>'+
-		    						'+ Pagamento facilitado'+
+		    						'+ Pagamento facilitado<br>'+
 		    						'+ 150% de Garantia'+
 		    					'</p>'+
 		    				'</div>'+
