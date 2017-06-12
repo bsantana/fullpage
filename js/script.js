@@ -1190,6 +1190,9 @@ $(document).ready(function() {
 	document.getElementsByClassName('btn-home')[0].onclick = function() {
 		$.fn.fullpage.moveSectionDown();
 	}
+	document.getElementsByClassName('btn-home')[1].onclick = function() {
+		$.fn.fullpage.moveSectionDown();
+	}
 
 	// Efeito do Modal com SVG
 	var modalTriggerBts = $('button[data-type="cd-modal-trigger"]'),

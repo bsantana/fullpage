@@ -911,6 +911,26 @@
 	font-size: 1.6em;
 }
 
+.btn-home.arrow {
+	border-width: 28.5px 25px 0 28.5px;
+	border-color: #fff transparent transparent transparent;
+	-webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select: none;
+    position: fixed;
+    z-index: 4;
+	bottom: 30px;
+    cursor: pointer;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    margin-top: -38px;
+    -webkit-transform: translate3d(0,0,0);
+    -ms-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+}
+
 /** @@@@ RESPONSIVO @@@ **/
 
 @media (max-width: 767px) {
