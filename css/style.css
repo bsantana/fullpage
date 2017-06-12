@@ -59,19 +59,19 @@
 	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(10) {
-	background: url("../images/page3/icons_svg/Icones_Prancheta 9.svg") #E5742D no-repeat center 20px;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 10.svg") #E5742D no-repeat center 20px;
 	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(11) {
-	background: url("../images/page3/icons_svg/Icones_Prancheta 10.svg") #33855F no-repeat center 20px;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 11.svg") #33855F no-repeat center 20px;
 	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(12) {
-	background: url("../images/page3/icons_svg/Icones_Prancheta 11.svg") #2C449D no-repeat center 20px;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 12.svg") #2C449D no-repeat center 20px;
 	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(13) { 
-	background: url("../images/page3/icons_svg/Icones_Prancheta 12.svg") #C06096 no-repeat center 20px;
+	background: url("../images/page3/icons_svg/Icones_Prancheta 9.svg") #C06096 no-repeat center 20px;
 	background-size: 80%;
 } /* END */
 
@@ -100,17 +100,17 @@
 	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 8.svg") #fff no-repeat;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(10):hover {
-	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 9.svg") #fff no-repeat center 10px;
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 10.svg") #fff no-repeat center 10px;
 	background-size: 80%;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(11):hover {
-	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 10.svg") #fff no-repeat;
-}
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(12):hover {
 	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 11.svg") #fff no-repeat;
 }
-#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13):hover { /* END */
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(12):hover {
 	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 12.svg") #fff no-repeat;
+}
+#fullpage #page3 .slide:nth-child(1) .row div:nth-child(13):hover { /* END */
+	background: url("../images/page3/icons_svg_hover/Icones_Prancheta 9.svg") #fff no-repeat;
 }
 #fullpage #page3 .slide:nth-child(1) .row div:nth-child(2):hover p { /* Definindo Hover das cores da categoria */
 	color: #EDA64D;
