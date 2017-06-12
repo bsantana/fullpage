@@ -80,14 +80,14 @@
 				}, 1500);
 
 				$(document).on('click', '#menu', function() {
-				clearInterval(i);
+				//clearInterval(i);
 				$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
 				$('#fp-nav').hide();
 				return $(this).toggleClass("cross");
 				});
 
 				$(document).on('click', '.cross', function() {
-				clearInterval(i);
+				//clearInterval(i);
 				$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
 				$('#fp-nav').show();
 				});
@@ -112,29 +112,29 @@
   				<div class="row sectionUp">
   					<div class="col-sm-4 col-sm-offset-2">
   						<ul class="page-title oque-somos">
-  							<li><a><div class="menu-arrow"></div><span>O Que Somos<span></a></li>
-  							<li><a><div class="menu-arrow"></div><span>Segmentos<span></a></li>
-  							<li><a><div class="menu-arrow"></div><span>Nossos Clientes<span></a></li>
-  							<li><a><div class="menu-arrow"></div><span>Como Funciona<span></a></li>
-  							<li><a><div class="menu-arrow" style="top: 13%;"></div><span>Nosso Processo<span></a>
-  								<ul><li><a><div class="menu-arrow"></div><span>Russel Vagas<span></a></li></ul>
+  							<li><a data-section="2"><div class="menu-arrow"></div><span>O Que Somos<span></a></li>
+  							<li><a data-section="3"><div class="menu-arrow"></div><span>Segmentos<span></a></li>
+  							<li><a data-section="4"><div class="menu-arrow"></div><span>Nossos Clientes<span></a></li>
+  							<li><a data-section="5"><div class="menu-arrow"></div><span>Como Funciona<span></a></li>
+  							<li><a data-section="6"><div class="menu-arrow" style="top: 13%;"></div><span>Nosso Processo<span></a>
+  								<ul><li><a href="http://russelvagas.com.br/" target="_blank"><div class="menu-arrow"></div><span>Russel Vagas<span></a></li></ul>
   							</li>
-  							<li><a><div class="menu-arrow"></div><span>Diferenciais<span></a></li>
+  							<li><a data-section="7"><div class="menu-arrow"></div><span>Diferenciais<span></a></li>
   						</ul>
   					</div>
   					<div class="col-sm-5">
   						<div class="blueLink page-title download-pdf">Download</div>
   						<ul class="page-title">
-  							<li><a><div class="menu-arrow"></div><span>Sobre Terceirização<span></a></li>
-  							<li><a><div class="menu-arrow"></div><span>Contrate Online<span></a></li>
-  							<li><a><div class="menu-arrow"></div><span>Contato<span></a></li>
+  							<!--<li><a><div class="menu-arrow"></div><span>Sobre Terceirização<span></a></li>-->
+  							<li><a href="http://www.russelservicos.com.br/" target="_blank"><div class="menu-arrow"></div><span>Contrate Online<span></a></li>
+  							<!--<li><a><div class="menu-arrow"></div><span>Contato<span></a></li>-->
   						</ul>
   					</div>
   				</div>
   				<div class="row">
   					<div class="col-sm-5 col-sm-offset-1">
   						<p class="page-title" style="margin: 0;">Russel Serviços</p>
-  						<p class="blueLink">Breve descrição Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma</p>
+  						<p class="blueLink">Somos especializados no fornecimento de mão de obra operacional e há 12 anos atuamos no mercado em diversos segmentos como construção civil, logística, indústria, petróleo e gás, hotelaria, varejo, eventos entre outros.</p>
   					</div>
   				</div>
   			</div>
@@ -308,14 +308,14 @@
 		    			<div class="row">
 		    				<div class="col-sm-5 col-sm-offset-1">
 		    					<p class="page-title color">Temos experiência<br>em diversos segmentos</p>
-		    					<p class="page-title">Administrativo</p>
+		    					<p class="page-title">Petróleo e Gás</p>
 		    					<button class="saiba-mais">saiba mais</button>
 		    				</div>
 		    				<div class="col-sm-6">
-		    					<img class="img-responsive" src="images/page3/profissionais/Profissionais_1-02.png">
+		    					<img class="img-responsive" src="images/page3/profissionais/Profissionais_1-04.png">
 		    				</div>
 		    			</div>
-		    		</div> 
+		    		</div>
 				</div>
 				<div class="slide">
 					<div class="container-fluid">
@@ -336,14 +336,14 @@
 		    			<div class="row">
 		    				<div class="col-sm-5 col-sm-offset-1">
 		    					<p class="page-title color">Temos experiência<br>em diversos segmentos</p>
-		    					<p class="page-title">Petróleo e Gás</p>
+		    					<p class="page-title">Administrativo</p>
 		    					<button class="saiba-mais">saiba mais</button>
 		    				</div>
 		    				<div class="col-sm-6">
-		    					<img class="img-responsive" src="images/page3/profissionais/Profissionais_1-04.png">
+		    					<img class="img-responsive" src="images/page3/profissionais/Profissionais_1-02.png">
 		    				</div>
 		    			</div>
-		    		</div>
+		    		</div> 
 				</div>
 		    </div>
 	    </div>

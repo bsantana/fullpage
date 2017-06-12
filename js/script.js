@@ -750,7 +750,7 @@ $(document).ready(function() {
 	    		'<div class="container-fluid">'+
 	    			'<div class="row sectionUp">'+
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
-	    					'<p class="page-title modal-title">Captação e Seleção</p>'+
+	    					'<p class="page-title modal-title">Russel Vagas</p>'+
 	    				'</div>'+
 	    			'</div>'+
 	    			'<div class="row">'+
@@ -770,7 +770,7 @@ $(document).ready(function() {
 	    			'</div>'+
 	    			'<div class="row">'+
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
-	    					'<button class="saiba-mais saiba-mais-modal"><a href="http://russelvagas.com.br/" target="_blank">Conheça Russel Vagas</a></button><br><br><br>'+
+	    					'<button class="saiba-mais saiba-mais-modal"><a href="http://russelvagas.com.br/" target="_blank">Conheça o Russel Vagas</a></button><br><br><br>'+
 	    				'</div>'+
 	    			'</div>'+
 	    		'</div>'+
@@ -1193,6 +1193,17 @@ $(document).ready(function() {
 	document.getElementsByClassName('btn-home')[1].onclick = function() {
 		$.fn.fullpage.moveSectionDown();
 	}
+
+	$(document).on('click', '.oque-somos li a', function() {
+		var number_section = $(this).data('section');
+		if (number_section) {
+			$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
+			$('.modal-menu').hide();
+			$('#menu').removeClass('cross')
+			$('#fp-nav').show();
+			$.fn.fullpage.moveTo(number_section);
+		}
+	});
 
 	// Efeito do Modal com SVG
 	var modalTriggerBts = $('button[data-type="cd-modal-trigger"]'),

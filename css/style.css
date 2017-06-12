@@ -155,13 +155,13 @@
 	background: linear-gradient(to bottom, #c77c2c, #eda64d, #f2c081);
 }
 #fullpage #page3 .slide:nth-child(3) {
-	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
+	background: linear-gradient(to bottom, #33855f, #339f79, #67b89c);
 }
 #fullpage #page3 .slide:nth-child(4) {
 	background: linear-gradient(to bottom, #7f6486, #7f6cb6, #aaa4ae);
 }
 #fullpage #page3 .slide:nth-child(5) {
-	background: linear-gradient(to bottom, #33855f, #339f79, #67b89c);
+	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
 }
 
 
@@ -815,6 +815,14 @@
     color: #fff;
 }
 
+#modalToSection .saiba-mais {
+	padding: 0;
+}
+
+.saiba-mais-modal a {
+	padding: 0.9rem 3rem;
+}
+
 .modal-menu div > ul {
 	padding: 0;
 }
@@ -975,6 +983,9 @@
   	#page3 .slide:nth-child(1) .container-fluid .row div,
   	#page3 .slide:nth-child(1) .container .row div {
 		height: 190px;
+	}
+	#modalToSection .container-fluid {
+		width: 1200px;
 	}
 }
 @media (min-width: 1600px) {
