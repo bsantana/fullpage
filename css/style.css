@@ -187,7 +187,6 @@
     -webkit-box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
     -moz-box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
     box-shadow: 0 1px 45px 0 rgba(0,0,0,.75);
-    border: none;
     cursor: pointer;
 }
 #fullpage #page3 .slide:nth-child(1) .fp-tableCell {
@@ -962,9 +961,8 @@ video {
 /** @@@@ RESPONSIVO @@@ **/
 
 @media (max-width: 767px) {
-  	#page3 .slide:nth-child(1) .container-fluid .row div.col-sm-2,
-  	#page3 .slide:nth-child(1) .container .row div {
-		height: 400px;
+	#fullpage #page3 .slide:nth-child(1) .row div:not(:nth-child(1)):hover {
+		border-color: #fff;
 	}
 	.guide {
 		left: 15px;
@@ -987,7 +985,9 @@ video {
 		display: flex;
 		align-items: center;
 	}
-
+	#fullpage #page3 .slide:nth-child(1) .row div:not(:nth-child(1)):hover {
+		border: none;
+	}
   	#page3 .slide:nth-child(1) .container-fluid .row div,
   	#page3 .slide:nth-child(1) .container .row div {
 		height: 130px;
