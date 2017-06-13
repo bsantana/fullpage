@@ -823,6 +823,26 @@
 	padding: 0.9rem 3rem;
 }
 
+.play-button {
+	position: absolute;
+    width: 100%;
+    top: 50%;
+}
+.play-button img {
+    width: 110px;
+    margin: auto;
+    display: flex;
+    cursor: pointer;
+}
+
+video {
+	cursor: pointer;
+}
+
+.slick-arrow {
+	display: none !important;
+}
+
 .modal-menu div > ul {
 	padding: 0;
 }

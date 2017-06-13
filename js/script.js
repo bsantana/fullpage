@@ -321,7 +321,14 @@ $(document).ready(function() {
 	    				'</div>'+
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
 	    					'<br><br>'+
-	    					'<img src="images/modal/Modal-14.png" class="bg-modal">'+
+
+	    					'<div style="position: relative;"><div class="play-button" style="top: 43%;"><img src="images/modal/play-33.svg" class="bg-modal"></div>'+
+
+	    					'<video width="100%" height="100%" poster="images/modal/Modal-14.png">'+
+								'<source src="videos/plataforma_online.mp4" type="video/mp4">'+
+								'Your browser does not support the video tag.'+
+								'<img data-src="image.png">'+
+							'</video></div>'+
 
 	    					'<p class="modal-text">Acompanhando as tendências tecnológicas, nosso site possui design responsivo para facilitar o acesso do usuário no celular e tablet, o que permite realizar compras pelos mesmos, além de um chat online para sanar todas as dúvidas do cliente. O objetivo do projeto é facilitar a vida do gestor que tem o dia a dia corrido e pouco tempo para perder em pesquisas e contratações de mão de obra.</p>'+
 	    					'<hr>'+
@@ -757,7 +764,13 @@ $(document).ready(function() {
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
 	    					'<p class="modal-text">Possuímos um extenso banco de profissionais que é alimentado desde a fundação de nossa empresa. Para digitalizar o processo de recebimento de currículos e ajudar a quem está na busca de emprego, lançamos o Russel Vagas, uma plataforma gratuita de oportunidades de empregos que têm como função promover a integração entre os melhores talentos do mercado e empresas que buscam por novos profissionais em seus processos seletivos.</p>'+
 
-	    					'<img src="images/modal/Modal_v3-27.png" class="bg-modal">'+
+	    					'<div class="play-button"><img src="images/modal/play-33.svg" class="bg-modal"></div>'+
+
+	    					'<video width="100%" height="100%" poster="images/modal/Modal_v3-27.png">'+
+								'<source src="videos/russel_vagas.mp4" type="video/mp4">'+
+								'Your browser does not support the video tag.'+
+								'<img data-src="image.png">'+
+							'</video>'+
 
 	    					'<p class="modal-text">Criamos um site leve, com design responsivo para celulares e tablets, sempre com o objetivo de ser o mais simples possível para o usuário. Há vagas para níveis operacionais e gerenciais de segmentos como construção civil, hotelaria, varejo, petróleo e gás, indústria, administração, comercial e logística, entre outros.</p>'+
 	    					'<hr>'+
@@ -1206,6 +1219,19 @@ $(document).ready(function() {
 			}
 			$.fn.fullpage.moveTo(number_section);
 		}
+	});
+
+	$(document).on('click', 'video', '.play-button', function() {
+		$('.play-button').hide();
+		document.getElementsByTagName('video')[0].setAttributeNode(document.createAttribute("controls"));
+		document.getElementsByTagName('video')[0].play();
+	});
+
+	$('.sliderx').slick({
+	  slidesToShow: 1,
+	  slidesToScroll: 1,
+	  autoplay: true,
+	  autoplaySpeed: 2000,
 	});
 
 	// Efeito do Modal com SVG
