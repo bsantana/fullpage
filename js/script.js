@@ -1195,12 +1195,15 @@ $(document).ready(function() {
 	}
 
 	$(document).on('click', '.oque-somos li a', function() {
-		var number_section = $(this).data('section');
+		var number_section = $(this).data('section'),
+			model = $(this).data('model');
 		if (number_section) {
 			$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
 			$('.modal-menu').hide();
 			$('#menu').removeClass('cross')
-			$('#fp-nav').show();
+			if (!model) {
+				$('#fp-nav').show();
+			}
 			$.fn.fullpage.moveTo(number_section);
 		}
 	});
