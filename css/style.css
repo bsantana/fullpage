@@ -317,24 +317,24 @@
 } /* End */
 
 /** Modal 1 - Modal da Seção 5 **/
-#modal1 .slide1 {
+#page5 .slide1 {
 	background: url("../images/page5/modal/Imagens-19.svg") no-repeat, #f04950;
 	background-blend-mode: hard-light;
 }
-#modal1 .slide2 {
+#page5 .slide2 {
 	background: url("../images/page5/modal/Imagens-20.svg") no-repeat, #8073b2;
 	background-blend-mode: hard-light;
 }
-#modal1 .slide3 {
+#page5 .slide3 {
 	background: url("../images/page5/modal/Imagens-21.svg") no-repeat, #66a2c1;
 	background-blend-mode: hard-light;
 }
-#modal1 .slide4 {
+#page5 .slide4 {
 	background: url("../images/page5/modal/Imagens-22.svg") no-repeat, #7a9c6e;
 	background-blend-mode: hard-light;
 } 
 
-#modal1 .page-title.sub-title {
+#page5 .page-title.sub-title {
 	font-size: 2em;
 } /** END **/
 
