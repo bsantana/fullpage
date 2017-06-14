@@ -164,6 +164,22 @@
 	background: linear-gradient(to bottom, #4a7990, #66a2c1, #9ec4d8);
 }
 
+#fullpage #page3 .slide:nth-child(2) .saiba-mais:hover {
+	background: #fff;
+	color: #c77c2c;
+}
+#fullpage #page3 .slide:nth-child(3) .saiba-mais:hover {
+	background: #fff;
+	color: #33855f;
+}
+#fullpage #page3 .slide:nth-child(4) .saiba-mais:hover {
+	background: #fff;
+	color: #7f6486;
+}
+#fullpage #page3 .slide:nth-child(5) .saiba-mais:hover {
+	background: #fff;
+	color: #4a7990;
+}
 
 #fullpage #page3 .slide:nth-child(1) .row div {
 	border-right: 8px solid #e4dede;
@@ -262,6 +278,16 @@
 	background: #D8DF21;
 	display: flex;
 	margin: auto;
+}
+#fullpage #page5 .slide:nth-child(1) .saiba-mais:hover {
+	background: #fff;
+	color: #D8DF21;
+}
+#fullpage #page5 .slide:nth-child(5) .saiba-mais:hover {
+	background: #fff;
+}
+#fullpage #page5 .slide:nth-child(5) .saiba-mais:hover a {
+	color: #66a2c1 !important;
 } /* End */
 
 /** Seção 6 - Slider **/
@@ -288,6 +314,10 @@
 #fullpage #page6 .slide:nth-child(6) {
 	background: url("../images/page6/implantacao.png") no-repeat, linear-gradient(to right, #06A3A5, #06D0E5);
 	background-size: auto 100%;
+}
+#fullpage #page6 .slide:nth-child(1) .saiba-mais:hover {
+	background: #fff;
+	color: #87D000;
 } /* End */
 
 /** Seção 7 - Slider **/
@@ -313,7 +343,12 @@
 	border-color: #06f7ce;
 	float: right;
 	color: #06f7ce;
-} /* End */
+}
+#fullpage #page7 .slide:nth-child(3) .saiba-mais:hover {
+	border-color: #fff;
+	background: #fff;
+	color: #265b70;
+}  /* End */
 
 /** Modal 1 - Modal da Seção 5 **/
 #page5 .slide1 {
@@ -325,8 +360,9 @@
 	background-blend-mode: hard-light;
 }
 #page5 .slide3 {
-	background: url("../images/page5/modal/Imagens-21.svg") no-repeat, #66a2c1;
-	background-blend-mode: hard-light;
+	background: url("../images/page5/modal/russel-hora-mais-37.svg") 375px 117px no-repeat, url("../images/page5/modal/Imagens-21.svg") no-repeat, #66a2c1;
+	background-size: auto 57%, auto;
+	background-blend-mode: normal, hard-light;
 }
 #page5 .slide4 {
 	background: url("../images/page5/modal/Imagens-22.svg") no-repeat, #7a9c6e;
@@ -345,6 +381,10 @@
 	background: #85b5cd;
 	color: #264758;
 	text-decoration: none;
+}
+#modal_administrativo .saiba-mais:hover a {
+	background: #264758;
+	color: #85b5cd;
 }
 #modal_administrativo .modal-text {
 	font-size: 1.8em;
@@ -366,6 +406,10 @@
 	background: #eda64d;
 	color: #7b490f;
 	text-decoration: none;
+}
+#modal_const_civil .saiba-mais:hover a {
+	background: #7b490f;
+	color: #eda64d;
 }
 #modal_const_civil .modal-text {
 	font-size: 1.8em;
@@ -480,6 +524,10 @@
 	color: #201921;
 	text-decoration: none;
 }
+#modal_logistica .saiba-mais:hover a {
+	background: #201921;
+	color: #A58FAA;
+}
 #modal_logistica .modal-text {
 	font-size: 1.8em;
 }
@@ -500,6 +548,10 @@
 	background: #7DB199;
 	color: #1F2C26;
 	text-decoration: none;
+}
+#modal_petroleo_gas .saiba-mais:hover a {
+	background: #1F2C26;
+	color: #7DB199;
 }
 #modal_petroleo_gas .modal-text {
 	font-size: 1.8em;
@@ -522,6 +574,10 @@
 	color: #1F2C26;
 	text-decoration: none;
 }
+#modal_varejo .saiba-mais:hover a {
+	background: #1F2C26;
+	color: #83AE5D;
+}
 #modal_varejo .modal-text {
 	font-size: 1.8em;
 }
@@ -543,6 +599,10 @@
 	color: #201921;
 	text-decoration: none;
 }
+#modal_energia .saiba-mais:hover a {
+	background: #201921;
+	color: #A2C355;
+}
 #modal_energia .modal-text {
 	font-size: 1.8em;
 }
@@ -563,6 +623,10 @@
 	background: #E08681;
 	color: #382120;
 	text-decoration: none;
+}
+#modal_inspecao_end .saiba-mais:hover a {
+	background: #382120;
+	color: #E08681;
 }
 #modal_inspecao_end .modal-text {
 	font-size: 1.8em;
@@ -606,6 +670,10 @@
 	color: #382120;
 	text-decoration: none;
 }
+#modal_eventos .saiba-mais:hover a {
+	background: #382120; 
+	color: #FF7739;
+}
 #modal_eventos .modal-text {
 	font-size: 1.8em;
 }
@@ -626,6 +694,10 @@
 	background: #AA8367;
 	color: #382120;
 	text-decoration: none;
+}
+#modal_operador_maquina .saiba-mais:hover a {
+	background: #382120;
+	color: #AA8367;
 }
 #modal_operador_maquina .modal-text {
 	font-size: 1.8em;
@@ -648,6 +720,10 @@
 	color: #382120;
 	text-decoration: none;
 }
+#modal_hotelaria .saiba-mais:hover a {
+	background: #382120;
+	color: #EA9057;
+}
 #modal_hotelaria .modal-text {
 	font-size: 1.8em;
 }
@@ -669,6 +745,10 @@
 	color: #16224F;
 	text-decoration: none;
 }
+#modal_aeroporto .saiba-mais:hover a {
+	background: #16224F; 
+	color: #808FC4;
+}
 #modal_aeroporto .modal-text {
 	font-size: 1.8em;
 }
@@ -689,6 +769,10 @@
 	background: #CD80AB;
 	color: #33202B;
 	text-decoration: none;
+}
+#modal_restaurantes .saiba-mais:hover a {
+	background: #33202B;
+	color: #CD80AB;
 }
 #modal_restaurantes .modal-text {
 	font-size: 1.8em;
@@ -787,10 +871,6 @@
 
 .sectionUp {
 	margin-top: 45px;
-}
-
-.blueLink {
-	color: #06f7ce;
 }
 
 .saiba-mais {
@@ -956,6 +1036,22 @@ video {
     -webkit-transform: translate3d(0,0,0);
     -ms-transform: translate3d(0,0,0);
     transform: translate3d(0,0,0);
+}
+
+.download-pdf a {
+	text-decoration: none;
+}
+
+.blueLink,
+.download-pdf a:hover,
+.download-pdf a:focus
+ {
+	color: #06f7ce;
+}
+.download-pdf img {
+	width: 40px;
+	margin-right: 20px;
+    margin-bottom: 20px;
 }
 
 /** @@@@ RESPONSIVO @@@ **/
