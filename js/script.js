@@ -1138,6 +1138,64 @@ $(document).ready(function() {
 	    	'</div>'+
 	    '</div>';
 
+	var $modal_contato =
+		'<div id="modal_contato" class="section modal1">'+
+	    	'<div class="content">'+
+	    		'<div class="modalClose">'+
+			    	'<div class="cross buttonOff">'+
+						'<svg viewBox="0 0 800 600">'+
+							'<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>'+
+							'<path d="M300,320 L540,320" id="middle"></path>'+
+							'<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>'+
+					'</svg>'+
+					'</div>'+
+			    	'<p>Fechar</p>'+
+		    	'</div>'+
+	    		'<div class="container-fluid">'+
+	    			'<div class="row sectionUp">'+
+	    				'<div class="col-sm-10 col-sm-offset-1">'+
+	    					'<p class="page-title modal-title">Contato</p>'+
+	    					'<hr>'+
+	    				'</div>'+
+	    			'</div>'+
+	    			'<div class="row">'+
+	    				'<div class="col-sm-10 col-sm-offset-1">'+
+	    					'<p style="font-size: 2.5em;">Deseja receber a visita de um dos nossos consultores especializados?</p>'+
+	    				'</div>'+
+	    				'<div class="col-sm-5 col-sm-offset-1">'+
+	    					'<form>'+
+	    						'<div class="form-group">'+
+								    '<label for="exampleInputEmail1">Nome</label>'+
+								    '<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nome">'+
+								'</div>'+
+								'<div class="form-group">'+
+								    '<label for="exampleInputEmail1">Empresa</label>'+
+								    '<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Empresa">'+
+								'</div>'+
+	    						'<div class="form-group">'+
+								    '<label for="exampleInputEmail1">E-mail</label>'+
+								    '<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">'+
+								'</div>'+
+								'<div class="form-group">'+
+								    '<label for="exampleInputPassword1">Telefone</label>'+
+									'<input type="password" class="form-control" id="InputPassword1" placeholder="Telefone">'+
+								'</div>'+
+								'<button type="submit" class="saiba-mais">enviar</button>'+
+	    					'</form>'+
+	    				'</div>'+
+	    				'<div class="col-sm-5">'+
+	    					'<img src="images/modal/contato/maps-28.png" class="map">'+
+	    					'<div class="icons">'+
+	    						'<a href="https://www.linkedin.com/company/russel-servi%C3%A7os" target="_blank"><img src="images/modal/contato/icon-26.svg"></a>'+
+	    						'<a href="https://www.facebook.com/russelservicos" target="_blank"><img src="images/modal/contato/icon-27.svg"></a>'+
+	    						'<p>Russel Serviços</p>'+
+	    					'</div>'+
+	    				'</div>'+
+	    			'</div>'+
+	    		'</div>'+
+	    	'</div>'+
+	    '</div>';
+
 	//adding the actions to the buttons
 	$(document).on('click', '.modalOn', function() {
 		var modal,
@@ -1177,6 +1235,8 @@ $(document).ready(function() {
 			modal = $modal_hotelaria;
 		} else if (data == "aeroporto") {
 			modal = $modal_aeroporto;
+		} else if (data == "contato") {
+			modal = $modal_contato;
 		}
 
 		$.fn.fullpage.setAllowScrolling(false);

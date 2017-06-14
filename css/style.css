@@ -786,6 +786,54 @@
 	border-color: #33202B;
 } /** END **/
 
+/** Modal de Contato - Modal da Seção 3 **/
+#modal_contato,
+#modal_contato .content,
+#modal_contato a,
+#modal_contato .modal-title {
+	background: #E6E6E6;
+	color: #666666;
+	text-decoration: none;
+}
+#modal_contato .saiba-mais:hover a {
+	background: #33202B;
+	color: #CD80AB;
+}
+#modal_contato .modal-text {
+	font-size: 1.8em;
+}
+#modal_contato ul {
+	font-size: 1.8em;
+	padding-left: 20px;
+}
+#modal_contato .map {
+	width: 220px;
+    margin: auto;
+    display: flex;
+    margin-top: -18px;
+}
+#modal_contato .icons {
+	width: 200px;
+    margin: auto;
+}
+#modal_contato .icons img {
+	width: 30px;
+}
+#modal_contato .icons p {
+	display: inline-block;
+	font-size: 1.3em;
+}
+#modalToSection #modal_contato .saiba-mais {
+	padding: 0.9rem 5rem;
+	display: flex;
+	margin: auto;
+}
+#modal_contato .saiba-mais,
+#modal_contato hr {
+	border-color: #666666;
+	color: #666666;
+} /** END **/
+
 .bg-modal {
 	width: 100%;
 }
@@ -1052,6 +1100,42 @@ video {
 	width: 40px;
 	margin-right: 20px;
     margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: inline-block;
+    max-width: 100%;
+    margin-bottom: 5px;
+    font-weight: bold;
+    position: absolute;
+    z-index: -1;
+}
+.form-control {
+    display: block;
+    width: 100%;
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+    -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+    -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+.form-control:focus {
+    border-color: #66afe9;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, .6);
 }
 
 /** @@@@ RESPONSIVO @@@ **/
