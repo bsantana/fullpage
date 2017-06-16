@@ -1166,19 +1166,19 @@ $(document).ready(function() {
 	    					'<form>'+
 	    						'<div class="form-group">'+
 								    '<label for="exampleInputEmail1">Nome</label>'+
-								    '<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Nome">'+
+								    '<input type="text" class="form-control" id="nome" placeholder="Nome">'+
 								'</div>'+
 								'<div class="form-group">'+
 								    '<label for="exampleInputEmail1">Empresa</label>'+
-								    '<input type="email" class="form-control" id="exampleInputEmail1" placeholder="Empresa">'+
+								    '<input type="text" class="form-control" id="empresa" placeholder="Empresa">'+
 								'</div>'+
 	    						'<div class="form-group">'+
 								    '<label for="exampleInputEmail1">E-mail</label>'+
-								    '<input type="email" class="form-control" id="exampleInputEmail1" placeholder="E-mail">'+
+								    '<input type="text" class="form-control" id="email" placeholder="E-mail">'+
 								'</div>'+
 								'<div class="form-group">'+
 								    '<label for="exampleInputPassword1">Telefone</label>'+
-									'<input type="password" class="form-control" id="InputPassword1" placeholder="Telefone">'+
+									'<input type="text" class="form-control" id="tel" placeholder="Telefone">'+
 								'</div>'+
 								'<button type="submit" class="saiba-mais">enviar</button>'+
 	    					'</form>'+
@@ -1291,18 +1291,30 @@ $(document).ready(function() {
 		document.getElementsByTagName('video')[0].play();
 	});
 
-	$(document).on('click', '#modal_contato .saiba-mais', function(e) {
+	/*$(document).on('submit', '#modal_contato form', function(e) {
 		e.preventDefault();
-		var dados = $( '#modal_contato form' ).serialize();
-		$.post("templates/ajax.php",
-	    {
-	        name: "Donald Duck",
-	        city: "Duckburg"
-	    },
-	    function(data, status){
-	        alert("Data: " + dados + "\nStatus: " + status);
-	    });
-	});
+		var dados = $( this ).serialize();
+		var nome = $('#nome').val();
+		var empresa = $('#empresa').val();
+		var email = $('#email').val();
+		var tel = $('#tel').val();
+
+	    jQuery.ajax({
+			type: "POST",
+			url: "http://www.teste2.russelservicos.com.br/ajax/",
+			data: {
+				'nome': nome,
+				'empresa': empresa,
+				'email': email,
+				'tel': tel
+			},
+			success: function( data )
+			{
+				console.log( data );
+				alert(dados)
+			}
+		});
+	});*/
 
 	$('.sliderx').slick({
 	  slidesToShow: 1,
