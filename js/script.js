@@ -1237,6 +1237,9 @@ $(document).ready(function() {
 			modal = $modal_aeroporto;
 		} else if (data == "contato") {
 			modal = $modal_contato;
+			$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
+			$('.modal-menu').hide();
+			$('#menu').removeClass('cross');
 		}
 
 		$.fn.fullpage.setAllowScrolling(false);
@@ -1246,6 +1249,7 @@ $(document).ready(function() {
 		$('#modalToSection').append(modal);
 		init();
 		$('#fp-nav').hide();
+		$('#pp-nav').remove(); //remove if (data == "contato")
 	});
 
 	$(document).on('click', '.buttonOff', function() {
@@ -1273,7 +1277,7 @@ $(document).ready(function() {
 		if (number_section) {
 			$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
 			$('.modal-menu').hide();
-			$('#menu').removeClass('cross')
+			$('#menu').removeClass('cross');
 			if (!model) {
 				$('#fp-nav').show();
 			}
@@ -1285,6 +1289,19 @@ $(document).ready(function() {
 		$('.play-button').hide();
 		document.getElementsByTagName('video')[0].setAttributeNode(document.createAttribute("controls"));
 		document.getElementsByTagName('video')[0].play();
+	});
+
+	$(document).on('click', '#modal_contato .saiba-mais', function(e) {
+		e.preventDefault();
+		var dados = $( '#modal_contato form' ).serialize();
+		$.post("templates/ajax.php",
+	    {
+	        name: "Donald Duck",
+	        city: "Duckburg"
+	    },
+	    function(data, status){
+	        alert("Data: " + dados + "\nStatus: " + status);
+	    });
 	});
 
 	$('.sliderx').slick({
