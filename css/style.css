@@ -296,11 +296,11 @@
 	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(2) {
-	background: url("../images/page6/treinamento.png") no-repeat, linear-gradient(to right, #87D000, #29B423);
+	background: url("../images/page6/exame.png") no-repeat, linear-gradient(to right, #87D000, #29B423);
 	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(3) {
-	background: url("../images/page6/exame.png") no-repeat, linear-gradient(to right, #29B423, #00D078);
+	background: url("../images/page6/treinamento.png") no-repeat, linear-gradient(to right, #29B423, #00D078);
 	background-size: auto 100%;
 }
 #fullpage #page6 .slide:nth-child(4) {
