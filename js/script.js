@@ -368,7 +368,7 @@ $(document).ready(function() {
 	    		'<div class="container-fluid">'+
 	    			'<div class="row sectionUp">'+
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
-	    					'<p class="page-title modal-title">Prêmios</p>'+
+	    					'<p class="page-title modal-title">Prêmio</p>'+
 	    				'</div>'+
 	    			'</div>'+
 	    			'<div class="row">'+
@@ -378,7 +378,7 @@ $(document).ready(function() {
 	    				'</div>'+
 
 	    			'</div>'+
-	    			'<div class="row bg1">'+
+	    			/*'<div class="row bg1">'+
 	    				'<div class="col-sm-2 col-sm-offset-1">'+
 	    					'<img src="images/modal/selo-35.png" class="bg-modal">'+
 	    				'</div>'+
@@ -386,17 +386,17 @@ $(document).ready(function() {
 	    					'<p class="title">Prêmio Quality Brasil 2017</p>'+
 	    					'<p>Homenagem pelo desenvolvimento da primeira plataforma de contratação de mão de obra online do Brasil.</p>'+
 	    				'</div>'+
-	    			'</div>'+
-	    			'<div class="row bg2">'+
+	    			'</div>'+*/
+	    			'<div class="row bg1">'+
 	    				'<div class="col-sm-2 col-sm-offset-1">'+
-	    					'<img src="images/modal/selo-36.png" class="bg-modal">'+
+	    					'<img src="images/modal/selo-35.png" class="bg-modal">'+
 	    				'</div>'+
 	    				'<div class="col-sm-8">'+
 	    					'<p class="title">Prêmio Empresa Referência Nacional & Qualidade Empresarial</p>'+
 	    					'<p>Homenagem da Agência Nacional de Cultura Empreendedorismo e Comunicação por ser a única empresa do Brasil a fornecer mão de obra operacional em até 48 horas.</p>'+
 	    				'</div>'+
 	    			'</div>'+
-	    			'<div class="row bg3">'+
+	    			/*'<div class="row bg3">'+
 	    				'<div class="col-sm-2 col-sm-offset-1">'+
 	    					'<img src="images/modal/iso-34.svg" class="bg-modal">'+
 	    				'</div>'+
@@ -404,7 +404,7 @@ $(document).ready(function() {
 	    					'<p class="title">Certificado ISO 9001</p>'+
 	    					'<p>Garante qualidade em todos nossos processos internos.</p>'+
 	    				'</div>'+
-	    			'</div>'+
+	    			'</div>'+*/
 	    		'</div>'+
 	    	'</div>'+
 	    '</div>';
