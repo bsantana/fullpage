@@ -127,7 +127,7 @@
   						</ul>
   					</div>
   					<div class="col-sm-5">
-  						<div class="blueLink page-title download-pdf"><img src="<?php echo get_template_directory_uri() ?>/fullpage/images/modal/download.svg"><a href="<?php echo get_template_directory_uri() ?>/fullpage/download/pdf-final.pdf" style="text-decoration: none;" class="blueLink" download="apresentação">Download</a></div>
+  						<div class="blueLink page-title download-pdf"><img src="<?php echo get_template_directory_uri() ?>/fullpage/images/modal/download.svg"><a href="<?php echo get_template_directory_uri() ?>/fullpage/download/pdf-final.pdf" style="text-decoration: none;" class="blueLink" download="apresentação-russel-servicos">Download</a></div>
   						<ul class="page-title">
   							<!--<li><a><div class="menu-arrow"></div><span>Sobre Terceirização<span></a></li>-->
   							<li><a href="http://www.russelservicos.com.br/" target="_blank"><div class="menu-arrow"></div><span>Contrate Online<span></a></li>
