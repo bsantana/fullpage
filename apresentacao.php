@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>FullPage 101 Template</title>
+    <title>Empresa de Terceirização Russel Serviços</title>
 
     	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/bootstrap.min.css">
 		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/jquery.fullpage.min.css" />
