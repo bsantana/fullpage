@@ -1,0 +1,663 @@
+<?php //template name: Apresentação ?>
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>FullPage 101 Template</title>
+
+    	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/jquery.fullpage.min.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/jquery.pagepiling.min.css" />
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/style.css" />
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/fullpage/css/animate.min.css">
+		<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri() ?>/fullpage/css/slick.css"/>
+
+		<!-- This following line is optional. Only necessary if you use the option css3:false and you want to use other easing effects rather than "linear", "swing" or "easeInOutCubic". -->
+		<!--<script src="vendors/jquery.easings.min.js"></script>-->
+
+		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
+		<!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
+		<script src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/scrolloverflow.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.extensions.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.pagepiling.min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/script-on.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/snap.svg-min.js"></script>
+		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/slick.min.js"></script>
+
+		<style type="text/css">
+			svg {
+			  width: 46px;
+			  height: 45px;
+			  cursor: pointer;
+			  -webkit-transform: translate3d(0, 0, 0);
+			  -moz-transform: translate3d(0, 0, 0);
+			  -o-transform: translate3d(0, 0, 0);
+			  -ms-transform: translate3d(0, 0, 0);
+			  transform: translate3d(0, 0, 0);
+			    border-radius: 50%;
+			    paint-order: 1;
+			    padding-right: 1px;
+			    padding-bottom: 1px;
+			    background: rgba(255,255,255,.5);
+			}
+			path {
+			  fill: none;
+			  -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  -moz-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  -o-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  -ms-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
+			  stroke-width: 40px;
+			  stroke-linecap: round;
+			  stroke: #1C3542;
+			  stroke-dashoffset: 0px;
+			}
+			path#top,
+			path#bottom {
+			  stroke-dasharray: 240px 950px;
+			}
+			path#middle {
+			  stroke-dasharray: 240px 240px;
+			}
+			.cross path#top,
+			.cross path#bottom {
+			  stroke-dashoffset: -650px;
+			  stroke-dashoffset: -650px;
+			}
+			.cross path#middle {
+			  stroke-dashoffset: -115px;
+			  stroke-dasharray: 1px 220px;
+			}
+		</style>
+		<script type="text/javascript">
+			(function() {
+				var i, resize;
+
+				i = setTimeout(function() {
+				//return $("div").toggleClass("cross");
+				}, 1500);
+
+				$(document).on('click', '#menu', function() {
+				//clearInterval(i);
+				$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
+				$('#fp-nav').hide();
+				return $(this).toggleClass("cross");
+				});
+
+				$(document).on('click', '.cross', function() {
+				//clearInterval(i);
+				$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
+				$('#fp-nav').show();
+				});
+
+				resize = function() {
+				return $("body").css({
+				  "margin-top": ~~((window.innerHeight - 150) / 2) + "px"
+				});
+				};
+
+				//$(window).resize(resize);
+
+				//resize();
+
+			}).call(this);
+		</script>
+</head>
+<body>
+
+  		<div class="modal-menu" style="display: none;position: fixed;background: #1C3542;top: 0;bottom: 0;right: 0;left: 0;color: #fff; z-index: 1;">
+  			<div class="container-fluid">
+  				<div class="row sectionUp">
+  					<div class="col-sm-4 col-sm-offset-2">
+  						<ul class="page-title oque-somos">
+  							<li><a data-section="2"><div class="menu-arrow"></div><span>O Que Somos<span></a></li>
+  							<li><a data-section="3"><div class="menu-arrow"></div><span>Segmentos<span></a></li>
+  							<li><a data-section="4"><div class="menu-arrow"></div><span>Nossos Clientes<span></a></li>
+  							<li><a data-section="5"><div class="menu-arrow"></div><span>Como Funciona<span></a></li>
+  							<li><a data-section="6"><div class="menu-arrow" style="top: 13%;"></div><span>Nosso Processo<span></a>
+  								<ul><li><a class="modalOn" data-section="6" data-model="captacao_selecao"><div class="menu-arrow"></div><span>Russel Vagas<span></a></li></ul>
+  							</li>
+  							<li><a data-section="7"><div class="menu-arrow"></div><span>Diferenciais<span></a></li>
+  						</ul>
+  					</div>
+  					<div class="col-sm-5">
+  						<div class="blueLink page-title download-pdf"><img src="<?php echo get_template_directory_uri() ?>/fullpage/images/modal/download.svg"><a href="<?php echo get_template_directory_uri() ?>/fullpage/download/pdf-final.pdf" style="text-decoration: none;" class="blueLink" download="apresentação">Download</a></div>
+  						<ul class="page-title">
+  							<!--<li><a><div class="menu-arrow"></div><span>Sobre Terceirização<span></a></li>-->
+  							<li><a href="http://www.russelservicos.com.br/" target="_blank"><div class="menu-arrow"></div><span>Contrate Online<span></a></li>
+  							<li><a href="http://www.russelservicos.com.br/contato/" target="_blank"><div class="menu-arrow"></div><span>Contato<span></a></li>
+  							<!--<li><a class="modalOn" data-model="contato"><div class="menu-arrow"></div><span>Contato<span></a></li>-->
+  						</ul>
+  					</div>
+  				</div>
+  				<div class="row">
+  					<div class="col-sm-5 col-sm-offset-1" style="margin-top: 20px;">
+  						<p class="page-title" style="margin: 0;font-size: 2em;">Russel Serviços</p>
+  						<p class="blueLink" style="margin: 0;">Somos especializados no fornecimento de mão de obra operacional e há 12 anos atuamos no mercado em diversos segmentos como construção civil, logística, indústria, petróleo e gás, hotelaria, varejo, eventos entre outros.</p>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+	
+		<div id="menu">
+			<svg viewBox="0 0 800 600">
+				<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
+				<path d="M300,320 L540,320" id="middle"></path>
+				<path d="M300,210 C300,210 520,210 540,210 C740,210 640,530 520,410 C440,330 300,190 300,190" id="bottom" transform="translate(480, 320) scale(1, -1) translate(-480, -318) "></path>
+			</svg>
+		</div>
+
+		<div class="hidden cd-modal" data-modal="modal-trigger">
+	      	<div class="cd-svg-bg" 
+				data-step1="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z" 
+				data-step2="M33.8,690l-188.2-300.3c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1L959.6,110c0.1,0.1,0,0.3-0.1,0.3 L34.1,690.1C34,690.2,33.9,690.1,33.8,690z" 
+				data-step3="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z" 
+				data-step4="M-329.3,504.3l-272.5-435c-0.1-0.1,0-0.3,0.1-0.3l925.4-579.8c0.1-0.1,0.3,0,0.3,0.1l272.5,435c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-329,504.5-329.2,504.5-329.3,504.3z" 
+				data-step5="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z" 
+				data-step6="M476.4,1013.4L205,580.3c-0.1-0.1,0-0.3,0.1-0.3L1130.5,0.2c0.1-0.1,0.3,0,0.3,0.1l271.4,433.1c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C476.6,1013.6,476.5,1013.5,476.4,1013.4z">
+				<svg height="100%" width="100%" preserveAspectRatio="none" viewBox="0 0 800 500">
+					<title>SVG Modal background</title>
+					<path fill="rgb(255, 255, 0)" id="cd-changing-path-1" d="M-59.9,540.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L864.8-41c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L-59.5,540.6 C-59.6,540.7-59.8,540.7-59.9,540.5z"/>
+					<path fill="rgb(255, 255, 0)" id="cd-changing-path-2" d="M-465.1,287.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L459.5-294c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3 l-925.4,579.8C-464.9,287.7-465,287.7-465.1,287.5z"/>
+					<path fill="rgb(255, 255, 0)" id="cd-changing-path-3" d="M341.1,797.5l-0.9-1.4c-0.1-0.1,0-0.3,0.1-0.3L1265.8,216c0.1-0.1,0.3,0,0.3,0.1l0.9,1.4c0.1,0.1,0,0.3-0.1,0.3L341.5,797.6 C341.4,797.7,341.2,797.7,341.1,797.5z"/>
+				</svg>
+			</div>
+			<button class="buttonOff modal-close">X</button>
+	    </div>
+
+	<div id="fullpage">
+	    <div id="page1" class="section">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-sm-12">
+						<img src="<?php echo get_template_directory_uri() ?>/fullpage/images/page1/logo-19.svg" style="max-width: 30%; display: flex; margin: auto;">
+					</div>
+					<div class="col-sm-12">
+						<button class="saiba-mais btn-home">Conheça</button>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-12" style="display: flex;justify-content: center;">
+						<div class="btn-home arrow"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	    <div id="page2" class="section">
+		    <div class="content">
+		    	<div class="guide">O que somos</div>
+
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6" style="">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide1/Prancheta.png">
+		    				</div>
+		    				<div class="col-sm-5" style="">
+		    					<p class="page-title textRight">Somos especializados no fornecimento de mão de obra operacional</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+				<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6 sliderx" style="">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (1).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (2).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (3).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (4).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (5).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (6).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (7).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (8).png">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (9).png">
+		    				</div>
+		    				<div class="col-sm-5" style="">
+		    					<p class="page-title textRight">Implantamos o profissional em até 48 horas</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+				<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6" style="">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide3/site_online.png">
+		    				</div>
+		    				<div class="col-sm-5" style="">
+		    					<p class="page-title textRight">Somos a única empresa com plataforma de contratação de mão de obra online do Brasil</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+			</div>
+	    </div>
+
+	    <div id="page3" class="section">
+		    <div class="content">
+		    	<div class="guide">Segmentos</div>
+
+		    	<div class="slide">
+			    	<div class="container-fluid">
+						<div class="row">
+							<div class="col-sm-6 col-sm-offset-1" style="display: flex; align-items: flex-end; padding: 0;">
+								<span style="color: #333333;" class="page-title no-shadow">Temos experiência<br>em diversos segmentos</span>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="construcao_civil">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 1.svg" style="    visibility: hidden;">
+								<p>Construção Civil</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="varejo">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 2.svg" style="    visibility: hidden;">
+								<p>Varejo</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 col-sm-offset-1 modalOn" data-model="logistica">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 3.svg" style="    visibility: hidden;">
+								<p>Logística</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="energia">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 4.svg" style="    visibility: hidden;">
+								<p>Energia</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="administrativo">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 5.svg" style="    visibility: hidden;">
+								<p>Administrativo</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="inspecao_end">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 6.svg" style="    visibility: hidden;">
+								<p>Inspeção</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="eventos">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 7.svg" style="    visibility: hidden;">
+								<p>Eventos</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 col-sm-offset-1 modalOn" data-model="operador_maquina">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 8.svg" style="    visibility: hidden;">
+								<p>Operador de Máquina</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="hotelaria">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 10.svg" style="    visibility: hidden;">
+								<p>Hotelaria</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="petroleo_gas">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 11.svg" style="    visibility: hidden;">
+								<p>Petróleo e Gás/Offshore</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="aeroporto">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 12.svg" style="    visibility: hidden;">
+								<p>Aeroporto</p>
+							</div>
+							<div class="col-sm-2 col-xs-6 modalOn" data-model="restaurantes">
+								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 9.svg" style="    visibility: hidden;">
+								<p>Restaurantes</p>
+							</div>
+						</div>
+					</div>
+		    	</div>
+				<div class="slide">
+					<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-5 col-sm-offset-1">
+		    					<p class="page-title color">Temos experiência<br>em diversos segmentos</p>
+		    					<p class="page-title">Construção Civil</p>
+		    					<button type="button" class="saiba-mais modalOn" data-model="construcao_civil">saiba mais</button>
+		    				</div>
+		    				<div class="col-sm-6">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-01.png">
+		    				</div>
+		    			</div>
+		    		</div> 
+				</div>
+				<div class="slide">
+					<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-5 col-sm-offset-1">
+		    					<p class="page-title color">Temos experiência<br>em diversos segmentos</p>
+		    					<p class="page-title">Petróleo e Gás</p>
+		    					<button class="saiba-mais modalOn" data-model="petroleo_gas">saiba mais</button>
+		    				</div>
+		    				<div class="col-sm-6">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-04.png">
+		    				</div>
+		    			</div>
+		    		</div>
+				</div>
+				<div class="slide">
+					<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-5 col-sm-offset-1">
+		    					<p class="page-title color">Temos experiência<br>em diversos segmentos</p>
+		    					<p class="page-title">Logística</p>
+		    					<button class="saiba-mais modalOn" data-model="logistica">saiba mais</button>
+		    				</div>
+		    				<div class="col-sm-6">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-03.png">
+		    				</div>
+		    			</div>
+		    		</div> 
+				</div>
+				<div class="slide">
+					<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-5 col-sm-offset-1">
+		    					<p class="page-title color">Temos experiência<br>em diversos segmentos</p>
+		    					<p class="page-title">Administrativo</p>
+		    					<button class="saiba-mais modalOn" data-model="administrativo">saiba mais</button>
+		    				</div>
+		    				<div class="col-sm-6">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-02.png">
+		    				</div>
+		    			</div>
+		    		</div> 
+				</div>
+		    </div>
+	    </div>
+
+	    <div id="page4" class="section">
+			<div class="guide">Nossos Clientes</div>
+	    	<div class="slide">
+	    		<div class="container-fluid">
+	    			<div class="row sectionUp">
+	    				<div class="col-sm-12">
+	    					<p class="page-title" style="text-align: center;">Muitas empresas já conhecem nossos serviços</p>
+	    				</div>
+	    			</div>
+	    			<div class="row sectionUp">
+		    			<div class="col-sm-10 col-sm-offset-1" style="display: flex;justify-content: space-between;">
+		    				<div class="col-sm-2">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-20.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-21.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-22.svg"><br><br>
+		    				</div>
+		    				<div class="col-sm-2">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-23.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-24.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-25.svg"><br><br>
+		    				</div>
+		    				<div class="col-sm-2">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-26.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-27.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-28.svg"><br><br>
+		    				</div>
+		    				<div class="col-sm-2">
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-29.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-30.svg"><br><br>
+		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-31.svg"><br><br>
+		    				</div>
+		    			</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    </div>
+	    
+	    <div id="page5" class="section">
+	    	<div class="guide">Como Funciona</div>
+	      	<div class="slide">
+		    	<div class="container-fluid">
+	    			<div class="row sectionUp">
+	    				<div class="col-sm-5 col-sm-offset-1" style="">
+	    					<div>
+		    					<p class="page-title" style="text-align: center;">Plataforma<br>online</p>
+		    					<button class="buttonOn saiba-mais one modalOn" id="modal-trigger" data-model="plataforma_online" data-type="cd-modal-trigger">saiba mais</button>
+	    					</div>
+	    				</div>
+	    				<div class="col-sm-5" style="">
+	    					<p class="page-title" style="text-align: center;">Consultores<br>Especializados</p>
+	    					<button class="buttonOn saiba-mais one modalOn" id="modal-trigger" data-model="consultores_especializados" data-type="cd-modal-trigger">saiba mais</button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="slide">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="col-sm-5 col-sm-offset-1" style="">
+	    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page5/Imagens-18.png">
+	    				</div>
+	    				<div class="col-sm-5" style="margin-top: 10%;">
+	    					<p class="page-title textRight">Nossas modalidades de contratação</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+
+
+	    	<div class="slide1 slide">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="col-sm-6" style="">
+	    				</div>
+	    				<div class="col-sm-5" style="">
+	    					<p class="page-title textRight">Diária</p>
+	    					<p class="page-title textRight sub-title">Mão de obra rápida para serviços rápidos</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+			<div class="slide2 slide">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="col-sm-6">
+	    				</div>
+	    				<div class="col-sm-5">
+	    					<p class="page-title textRight">Mensal</p>
+	    					<p class="page-title textRight sub-title">Simplifique sua administração e ganhe produtividade</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+			<div class="slide3 slide">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="col-sm-6">
+	    				</div>
+	    				<div class="col-sm-5">
+	    					<p class="page-title">Planos Russel Hora Mais. Ganhe:</p>
+	    					<p class="page-title sub-title">
+	    						+ Diárias Gratuitas<br>
+	    						+ Horas Extras Grátis<br>
+	    						+ Pagamento facilitado<br>
+	    						+ 150% de Garantia
+	    					</p>
+							<button class="buttonOn saiba-mais one" style="padding: 0.9rem 0rem;"><a href="https://www.russelservicos.com.br/planos" target="_blank" style="padding: 0.9rem 3rem;text-decoration: none;color: #fff;">saiba mais</a></button>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+	    	<div class="slide4 slide">
+	    		<div class="container-fluid">
+	    			<div class="row">
+	    				<div class="col-sm-6">
+	    				</div>
+	    				<div class="col-sm-5">
+	    					<p class="page-title textRight">Recrutamento e seleção</p>
+	    					<p class="page-title textRight sub-title">Selecionamos campeões para sua empresa</p>
+	    				</div>
+	    			</div>
+	    		</div>
+	    	</div>
+
+	    </div>
+
+	    <div id="page6" class="section">
+	      	<div class="content">
+		    	<div class="guide">Nosso Processo</div>
+
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6" style="">
+		    					
+		    				</div>
+		    				<div class="col-sm-5" style="">
+		    					<p class="page-title textRight">Captação e Seleção Profissional</p>
+		    					<p class="sub-page-title textRight">Triagem de profissionais em nossa plataforma de currículos</p>
+		    					<button class="buttonOn saiba-mais modalOn" id="modal-trigger" data-model="captacao_selecao" data-type="cd-modal-trigger" style="float: right;">saiba mais</button>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Exame Médico</p>
+		    					<p class="sub-page-title textRight">Encaminhamento para exames em clínica médica</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+				<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Treinamento Especializado</p>
+		    					<p class="sub-page-title textRight">Treinamento com normas técnicas de segurança</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Contrato Trabalhista</p>
+		    					<p class="sub-page-title textRight">Abertura de conta e assinatura de contratos</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Benefícios, Uniformes e EPI</p>
+		    					<p class="sub-page-title textRight">Recebimento de benefícios, uniformes e Equipamentos de Segurança Individual</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Implantação em até 48 horas</p>
+		    					<p class="sub-page-title textRight">O profissional contratado estará com documentação completa e apto para o trabalho</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+			</div>
+	    </div>
+
+	    <div id="page7" class="section">
+	      	<div class="content">
+		    	<div class="guide">Diferenciais</div>
+
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6" style="">
+		    					
+		    				</div>
+		    				<div class="col-sm-5" style="">
+		    					<p class="page-title textRight">Implantação de profissionais em até 48 horas</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+				<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Substituição e reposição em até 24 horas</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+				<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Premiação por inovação</p>
+		    					<button class="saiba-mais modalOn" data-model="premios">ver prêmio</button>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">1º e-commerce de mão de obra do Brasil</p>
+		    					<div style="background: #3cb1a6;">
+		    						<img src="<?php echo get_template_directory_uri() ?>/fullpage/images/modal/selo-36.png" style="width: 20%;margin: 20px;">
+		    						<span class="sub-page-title" style="color: #fff;">Prêmio Quality Brasil 2017</span>
+		    					</div>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">Certificado de Qualidade ISO 9001</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+		    	<div class="slide">
+		    		<div class="container-fluid">
+		    			<div class="row">
+		    				<div class="col-sm-6">
+
+		    				</div>
+		    				<div class="col-sm-5">
+		    					<p class="page-title textRight">150% de Garantia na entrega de funcionários de alto desempenho</p>
+		    				</div>
+		    			</div>
+		    		</div>
+		    	</div>
+			</div>
+	    </div>
+	</div>
+	
+	<div id="modalToSection" class="hidden"></div>
+</body>
+</html>
