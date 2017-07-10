@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	});
 
+	$('#page1').removeClass('init');
 
 //$(document).ready(function() {
 
@@ -1289,6 +1290,19 @@ $(document).ready(function() {
 		$('.play-button').hide();
 		document.getElementsByTagName('video')[0].setAttributeNode(document.createAttribute("controls"));
 		document.getElementsByTagName('video')[0].play();
+	});
+
+	$(document).on('click', '#menu', function() {
+		//clearInterval(i);
+		$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
+		$('#fp-nav').hide();
+		return $(this).toggleClass("cross");
+	});
+
+	$(document).on('click', '.cross', function() {
+		//clearInterval(i);
+		$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
+		$('#fp-nav').show();
 	});
 
 	/*$(document).on('submit', '#modal_contato form', function(e) {

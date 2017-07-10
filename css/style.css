@@ -4,6 +4,17 @@
 #fullpage #page1 {
 	background: linear-gradient(to right, #7c2327, #cd3a40, #c72128);
 }
+.init {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 5;
+}
+.init img {
+	margin-top: 5% !important;
+}
 #fullpage #page1 .col-sm-12:nth-child(1) {
 	margin-bottom: 20px;
 }

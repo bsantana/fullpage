@@ -21,14 +21,7 @@
 
 		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 		<!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
-		<script src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/scrolloverflow.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.extensions.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.pagepiling.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/script-on.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/snap.svg-min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/slick.min.js"></script>
+
 
 		<style type="text/css">
 			svg {
@@ -75,39 +68,6 @@
 			  stroke-dasharray: 1px 220px;
 			}
 		</style>
-		<script type="text/javascript">
-			(function() {
-				var i, resize;
-
-				i = setTimeout(function() {
-				//return $("div").toggleClass("cross");
-				}, 1500);
-
-				$(document).on('click', '#menu', function() {
-				//clearInterval(i);
-				$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
-				$('#fp-nav').hide();
-				return $(this).toggleClass("cross");
-				});
-
-				$(document).on('click', '.cross', function() {
-				//clearInterval(i);
-				$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
-				$('#fp-nav').show();
-				});
-
-				resize = function() {
-				return $("body").css({
-				  "margin-top": ~~((window.innerHeight - 150) / 2) + "px"
-				});
-				};
-
-				//$(window).resize(resize);
-
-				//resize();
-
-			}).call(this);
-		</script>
 </head>
 <body>
 
@@ -172,7 +132,7 @@
 	    </div>
 
 	<div id="fullpage">
-	    <div id="page1" class="section">
+	    <div id="page1" class="section init">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12">
@@ -659,5 +619,14 @@
 	</div>
 	
 	<div id="modalToSection" class="hidden"></div>
+
+	<script src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/script-on.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/snap.svg-min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/slick.min.js"></script>
 </body>
 </html>
