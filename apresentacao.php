@@ -21,14 +21,6 @@
 
 		<!-- This following line is only necessary in the case of using the option `scrollOverflow:true` -->
 		<!--<script type="text/javascript" src="vendors/scrolloverflow.min.js"></script>-->
-		<script src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery-3.2.1.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/scrolloverflow.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.extensions.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.pagepiling.min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/script-on.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/snap.svg-min.js"></script>
-		<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/slick.min.js"></script>
 
 		<style type="text/css">
 			svg {
@@ -75,7 +67,7 @@
 			  stroke-dasharray: 1px 220px;
 			}
 		</style>
-		<script type="text/javascript">
+		<!--<script type="text/javascript">
 			(function() {
 				var i, resize;
 
@@ -107,7 +99,7 @@
 				//resize();
 
 			}).call(this);
-		</script>
+		</script>-->
 </head>
 <body>
 
@@ -198,7 +190,7 @@
 		    		<div class="container-fluid">
 		    			<div class="row">
 		    				<div class="col-sm-6" style="">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide1/Prancheta.png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide1/Prancheta.png">
 		    				</div>
 		    				<div class="col-sm-5" style="">
 		    					<p class="page-title textRight">Somos especializados no fornecimento de mão de obra operacional</p>
@@ -209,18 +201,18 @@
 				<div class="slide">
 		    		<div class="container-fluid">
 		    			<div class="row">
-		    				<div class="col-sm-6 sliderx" style="">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (1).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (2).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (3).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (4).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (5).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (6).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (7).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (8).png">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (9).png">
+		    				<div class="col-sm-6 sliderx">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (1).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (2).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (3).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (4).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (5).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (6).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (7).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (8).png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide2/Profissional (9).png">
 		    				</div>
-		    				<div class="col-sm-5" style="">
+		    				<div class="col-sm-5">
 		    					<p class="page-title textRight">Implantamos o profissional em até 48 horas</p>
 		    				</div>
 		    			</div>
@@ -229,10 +221,10 @@
 				<div class="slide">
 		    		<div class="container-fluid">
 		    			<div class="row">
-		    				<div class="col-sm-6" style="">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide3/site_online.png">
+		    				<div class="col-sm-6">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page2/slide3/site_online.png">
 		    				</div>
-		    				<div class="col-sm-5" style="">
+		    				<div class="col-sm-5">
 		    					<p class="page-title textRight">Somos a única empresa com plataforma de contratação de mão de obra online do Brasil</p>
 		    				</div>
 		    			</div>
@@ -252,51 +244,51 @@
 								<span style="color: #333333;" class="page-title no-shadow">Temos experiência<br>em diversos segmentos</span>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="construcao_civil">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 1.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 1.svg" style="    visibility: hidden;">
 								<p>Construção Civil</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="varejo">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 2.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 2.svg" style="    visibility: hidden;">
 								<p>Varejo</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 col-sm-offset-1 modalOn" data-model="logistica">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 3.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 3.svg" style="    visibility: hidden;">
 								<p>Logística</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="energia">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 4.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 4.svg" style="    visibility: hidden;">
 								<p>Energia</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="administrativo">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 5.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 5.svg" style="    visibility: hidden;">
 								<p>Administrativo</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="inspecao_end">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 6.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 6.svg" style="    visibility: hidden;">
 								<p>Inspeção</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="eventos">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 7.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 7.svg" style="    visibility: hidden;">
 								<p>Eventos</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 col-sm-offset-1 modalOn" data-model="operador_maquina">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 8.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 8.svg" style="    visibility: hidden;">
 								<p>Operador de Máquina</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="hotelaria">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 10.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 10.svg" style="    visibility: hidden;">
 								<p>Hotelaria</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="petroleo_gas">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 11.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 11.svg" style="    visibility: hidden;">
 								<p>Petróleo e Gás/Offshore</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="aeroporto">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 12.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 12.svg" style="    visibility: hidden;">
 								<p>Aeroporto</p>
 							</div>
 							<div class="col-sm-2 col-xs-6 modalOn" data-model="restaurantes">
-								<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 9.svg" style="    visibility: hidden;">
+								<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/icons_svg/Icones_Prancheta 9.svg" style="    visibility: hidden;">
 								<p>Restaurantes</p>
 							</div>
 						</div>
@@ -311,7 +303,7 @@
 		    					<button type="button" class="saiba-mais modalOn" data-model="construcao_civil">saiba mais</button>
 		    				</div>
 		    				<div class="col-sm-6">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-01.png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-01.png">
 		    				</div>
 		    			</div>
 		    		</div> 
@@ -325,7 +317,7 @@
 		    					<button class="saiba-mais modalOn" data-model="petroleo_gas">saiba mais</button>
 		    				</div>
 		    				<div class="col-sm-6">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-04.png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-04.png">
 		    				</div>
 		    			</div>
 		    		</div>
@@ -339,7 +331,7 @@
 		    					<button class="saiba-mais modalOn" data-model="logistica">saiba mais</button>
 		    				</div>
 		    				<div class="col-sm-6">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-03.png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-03.png">
 		    				</div>
 		    			</div>
 		    		</div> 
@@ -353,7 +345,7 @@
 		    					<button class="saiba-mais modalOn" data-model="administrativo">saiba mais</button>
 		    				</div>
 		    				<div class="col-sm-6">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-02.png">
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page3/profissionais/Profissionais_1-02.png">
 		    				</div>
 		    			</div>
 		    		</div> 
@@ -373,24 +365,24 @@
 	    			<div class="row sectionUp">
 		    			<div class="col-sm-10 col-sm-offset-1" style="display: flex;justify-content: space-between;">
 		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-20.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-21.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-22.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-20.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-21.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-22.svg"><br><br>
 		    				</div>
 		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-23.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-24.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-25.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-23.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-24.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-25.svg"><br><br>
 		    				</div>
 		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-26.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-27.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-28.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-26.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-27.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-28.svg"><br><br>
 		    				</div>
 		    				<div class="col-sm-2">
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-29.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-30.svg"><br><br>
-		    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-31.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-29.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-30.svg"><br><br>
+		    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page4/icons_svg/Icones-31.svg"><br><br>
 		    				</div>
 		    			</div>
 	    			</div>
@@ -420,7 +412,7 @@
 	    		<div class="container-fluid">
 	    			<div class="row">
 	    				<div class="col-sm-5 col-sm-offset-1" style="">
-	    					<img class="img-responsive" src="<?php echo get_template_directory_uri() ?>/fullpage/images/page5/Imagens-18.png">
+	    					<img class="img-responsive" data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/page5/Imagens-18.png">
 	    				</div>
 	    				<div class="col-sm-5" style="margin-top: 10%;">
 	    					<p class="page-title textRight">Nossas modalidades de contratação</p>
@@ -623,7 +615,7 @@
 		    				<div class="col-sm-5">
 		    					<p class="page-title textRight">1º e-commerce de mão de obra do Brasil</p>
 		    					<div style="background: #3cb1a6;">
-		    						<img src="<?php echo get_template_directory_uri() ?>/fullpage/images/modal/selo-36.png" style="width: 20%;margin: 20px;">
+		    						<img data-src="<?php echo get_template_directory_uri() ?>/fullpage/images/modal/selo-36.png" style="width: 20%;margin: 20px;">
 		    						<span class="sub-page-title" style="color: #fff;">Prêmio Quality Brasil 2017</span>
 		    					</div>
 		    				</div>
@@ -659,5 +651,14 @@
 	</div>
 	
 	<div id="modalToSection" class="hidden"></div>
+
+	<script src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/scrolloverflow.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.fullpage.extensions.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/jquery.pagepiling.min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/script-on.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/snap.svg-min.js"></script>
+	<script type="text/javascript" src="<?php echo get_template_directory_uri() ?>/fullpage/js/slick.min.js"></script>
 </body>
 </html>

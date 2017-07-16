@@ -1291,6 +1291,19 @@ $(document).ready(function() {
 		document.getElementsByTagName('video')[0].play();
 	});
 
+	$(document).on('click', '#menu', function() {
+		//clearInterval(i);
+		$('.modal-menu').addClass('animated bounceInRight').removeClass('bounceOutRight').show();
+		$('#fp-nav').hide();
+		return $(this).toggleClass("cross");
+	});
+
+	$(document).on('click', '.cross', function() {
+		//clearInterval(i);
+		$('.modal-menu').addClass('animated bounceOutRight').removeClass('bounceInRight');
+		$('#fp-nav').show();
+	});
+
 	/*$(document).on('submit', '#modal_contato form', function(e) {
 		e.preventDefault();
 		var dados = $( this ).serialize();
