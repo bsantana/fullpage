@@ -67,6 +67,7 @@
 			  stroke-dasharray: 1px 220px;
 			}
 		</style>
+
 		<!--<script type="text/javascript">
 			(function() {
 				var i, resize;
@@ -164,7 +165,7 @@
 	    </div>
 
 	<div id="fullpage">
-	    <div id="page1" class="section">
+	    <div id="page1" class="section init">
 			<div class="container-fluid">
 				<div class="row">
 					<div class="col-sm-12">

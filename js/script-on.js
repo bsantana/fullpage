@@ -13,6 +13,7 @@ $(document).ready(function() {
 
 	});
 
+	$('#page1').removeClass('init');
 
 //$(document).ready(function() {
 
