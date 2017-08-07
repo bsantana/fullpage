@@ -6,6 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="https://www.russelservicos.com.br/wp-content/uploads/2017/03/cropped-favicon-russel-32x32.png" type="image/x-icon">
 
     <title>Empresa de Terceirização Russel Serviços</title>
 
