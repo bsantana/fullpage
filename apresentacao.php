@@ -453,7 +453,7 @@
 	    				<div class="col-sm-6">
 	    				</div>
 	    				<div class="col-sm-5">
-	    					<p class="page-title">Planos Russel Hora Mais. Ganhe:</p>
+	    					<p class="page-title">Plano Russel Hora Mais. Ganhe:</p>
 	    					<p class="page-title sub-title">
 	    						+ Diárias Gratuitas<br>
 	    						+ Horas Extras Grátis<br>

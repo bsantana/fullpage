@@ -374,7 +374,7 @@ $(document).ready(function() {
 	    			'</div>'+
 	    			'<div class="row">'+
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
-	    					'<p class="modal-text">Sempre em busca de axcelência e através de um trabalho em conjunto de toda equipe interna, a Russel Serviços adquiriu o Certificado de Qualidade ISO 9001, o que trouxe ainda mais credibilidade à empresa, além da conquista de prêmios pelos diferenciais que apresentamos ao mercado.</p>'+
+	    					'<p class="modal-text">Sempre em busca de excelência e através de um trabalho em conjunto de toda equipe interna, a Russel Serviços adquiriu o Certificado de Qualidade ISO 9001, o que trouxe ainda mais credibilidade à empresa, além da conquista de prêmios pelos diferenciais que apresentamos ao mercado.</p>'+
 							'<img src="../wp-content/themes/ferado/fullpage/images/modal/premios.png" class="bg-modal">'+
 	    				'</div>'+
 
@@ -431,13 +431,13 @@ $(document).ready(function() {
 	    			'</div>'+
 	    			'<div class="row">'+
 	    				'<div class="col-sm-7 col-sm-offset-1">'+
-	    					'<p class="modal-text">Sempre em busca de axcelência e através de um trabalho em conjunto de toda equipe interna, a Russel Serviços adquiriu o Certificado de Qualidade ISO 9001, o que trouxe ainda mais credibilidade à empresa, além da conquista de prêmios pelos diferenciais que apresentamos ao mercado.</p>'+
+	    					'<p class="modal-text">Com a terceirização feita da forma correta, a empresa de logística pode resolver a dificuldade em encontrar profissionais de diversos níveis de forma bem rápida. É importante lembrar que a contratação de profissionais capacitados resolve não só a ausência de mão de obra qualificada disponível, mas também problemas com controle de estoque e implantação de novas tecnologias. Um profissional capacitado conseguirá realizar as contas da demanda da melhor maneira, para que não haja dinheiro parado ou falta de estoque, por exemplo. Além disso, com a terceirização a empresa economiza tempo, dinheiro e evita dores de cabeça.</p>'+
 	    				'</div>'+
 	    				'<div class="col-sm-3">'+
 							'<img src="../wp-content/themes/ferado/fullpage/images/modal/Modal_v2-25.png" class="bg-modal">'+
 	    				'</div>'+
 	    				'<div class="col-sm-10 col-sm-offset-1">'+
-	    					'<p class="modal-text">Com a terceirização feita da forma correta, a empresa de logística pode resolver a dificuldade em encontrar profissionais de diversos níveis de forma bem rápida. É importante lembrar que a contratação de profissionais capacitados resolve não só a ausência de mão de obra qualificada disponível, mas também problemas com controle de estoque e implantação de novas tecnologias. Um profissional capacitado conseguirá realizar as contas da demanda da melhor maneira, para que não haja dinheiro parado ou falta de estoque, por exemplo. Além disso, com a terceirização a empresa economiza tempo, dinheiro e evita dores de cabeça.</p>'+
+	    					'<p class="modal-text"></p>'+
 	    					
 	    					'<img src="../wp-content/themes/ferado/fullpage/images/modal/Modal_v2-24.png" class="bg-modal">'+
 	    					
